@@ -1,19 +1,19 @@
 # Bunty & Chintu: Episode 1 (animated, open-world comedy)
 
-An original 8-minute animated Hinglish comedy in the style of an open-world crime game: wanted stars,
+An original 10-minute animated comedy with Hindi voice-over, in the style of an open-world crime game: wanted stars,
 minimap, mission banners, police chases, a bank "heist" and a heat-seeking chappal. Everything (characters, city, cars, HUD,
-music, sound effects and babble voices) is generated from code. The video uses no game assets, no footage and no
-samples, so it is safe to upload.
+music and sound effects) is generated from code, and the Hindi voice-over comes from the open-source Kokoro-82M TTS
+model (Apache-2.0, commercial use allowed). The video uses no game assets, no footage and no samples.
 
 ## Output
 | File | What it is |
 |---|---|
-| `output/bunty_chintu_ep1_compact.mp4` | Final video (1080p, 30 fps, 8:02) compressed to under 100 MB so it fits on GitHub |
-| `output/bunty_chintu_ep1.mp4` *(not in git, 184 MB)* | Full-quality master with music, SFX and cartoon "babble" voices; upload this one to YouTube. Rebuild with `./build.sh` |
+| `output/bunty_chintu_ep1_compact.mp4` | Final video (1080p, 30 fps, 10:08, Hindi voice-over) compressed to under 100 MB so it fits on GitHub |
+| `output/bunty_chintu_ep1.mp4` *(not in git, 184 MB)* | Full-quality master with Hindi voice-over, music and SFX; upload this one to YouTube. Rebuild with `./build.sh` |
 | `output/bunty_chintu_ep1_no_voices.mp4` *(not in git)* | Same video with music + SFX only, for dubbing with your own voice. Built by `./build.sh` |
 | `output/bunty_chintu_ep1.srt` | Subtitles (speaker: line) |
 | `output/thumbnail.jpg` | 1280x720 YouTube thumbnail |
-| `SCRIPT.md` | Full dialogue with timestamps (for voice-over) |
+| `SCRIPT.md` | Full Hindi + Hinglish dialogue with timestamps and the voice cast |
 | `YOUTUBE.md` | Title ideas, description with chapters, tags, upload settings |
 
 ## Story
@@ -23,19 +23,29 @@ samples, so it is safe to upload.
 4. **Gaadi Chori:** the car belongs to Dadi. She has a handbag, and the theft ends in a bicycle "supercar".
 5. **Supercar:** a tortoise overtakes them, and the wanted level goes up for ringing the bell. Police chase, then a ramp jump.
 6. **Pool party:** they crash into Lala Ji's pool, become the DJ, and get offered the bank job.
-7. **Master Plan:** "Step 3: ???"
-8. **The Heist:** a banana instead of a gun, token number 999, a time-lapse, then ₹50 from his own account.
-9. **Auto Wala Stunt:** "Meter chalu hai, uncle!" Desi drift and a Bollywood bridge jump.
-10. **Mission Failed:** Mummy's homing chappal.
-11. **Respawn:** "Ek baar aur khelein?"
-12. **Outro:** like, subscribe, and an end screen with space for YouTube elements.
+7. **Fast travel:** a pause-menu map, then the loading screen gets stuck again.
+8. **Master Plan:** "Step 3: ???"
+9. **Disguise Shopping:** five outfits at Bhola Costume Centre, ₹0 in the wallet, and a free paper bag for Chintu.
+10. **The Heist:** a banana instead of a gun, token number 999, a time-lapse, then ₹50 from his own account.
+11. **Breaking News:** PBN 24x7 covers the "banana dakait" with CCTV footage and a police interview.
+12. **Auto Wala Stunt:** "Meter chalu hai, uncle!" Desi drift and a Bollywood bridge jump.
+13. **Mission Failed:** Mummy's homing chappal.
+14. **Respawn:** "Ek baar aur khelein?"
+15. **Dadi ka comeback:** a street race at a red light.
+16. **Outro:** like, subscribe, and an end screen with space for YouTube elements.
+
+## Voice-over
+`audio/voices.py` reads each line's Devanagari text (`hi:` in the scene files) and synthesizes it with
+[Kokoro-82M](https://github.com/thewh1teagle/kokoro-onnx) (4 Hindi voices). Each character gets a distinct voice through
+base voice + speed + formant-aware pitch shift (ffmpeg rubberband), plus megaphone and muffle effects where the scene needs them.
+The mouths are animated from the real audio envelope. Model files go in `assets/tts/` (downloaded by `./build.sh` if missing).
 
 ## Rebuild / edit
 Requirements: Node 18+, Python 3.10+, ffmpeg.
 ```bash
 npm install
-pip install numpy scipy fonttools brotli
-./build.sh               # timeline -> audio -> parallel render -> mux  (≈10 min on 4 cores)
+pip install numpy scipy fonttools brotli kokoro-onnx soundfile
+./build.sh               # timeline -> Hindi voices -> audio -> parallel render -> mux  (≈12 min on 4 cores)
 ```
 - Change dialogue: edit the `lines` array in `src/scenes/s_*.mjs` (`t` = start second inside the scene).
 - Preview a frame: `node src/still.mjs bank 35` (writes `tests/stills/bank_35.png`).

@@ -34,7 +34,7 @@ function exterior(ctx, t, S) {
   if (bonk) { pow(ctx, 640, GY - 300, 'BONK!', t - 2.9, 0.8, '#ffd23f', 4); dizzy(ctx, cx, GY - 330, t, 1.1); }
 }
 
-function interior(ctx, t, S) {
+export function interior(ctx, t, S) {
   const it = t;
   const tl = clamp((t - TL0) / (TL1 - TL0));
   const hours = 10 + tl * 80;
@@ -147,17 +147,17 @@ export default {
     [50.2, 'crickets', { dur: 1.8 }], [ALARM, 'alarmbell', { dur: 9, vol: 0.5 }], [ALARM + 0.1, 'star'], [ALARM + 0.4, 'star'], [59.8, 'bang'],
   ],
   lines: [
-    { t: 5.0, who: 'bunty', text: 'KOI HILEGA NAHI! Ye DAKAITI hai!', style: 'shout', dur: 3.4 },
-    { t: 10.6, who: 'cashier', text: 'Line mein aaiye. Pehle token lijiye.', dur: 3.0 },
-    { t: 18.6, who: 'chintu', text: 'Bhai... 999?!', dur: 2.4 },
-    { t: 21.0, who: 'bunty', text: '...Koi baat nahi. Wait karte hain.', dur: 2.6 },
-    { t: 34.2, who: 'bunty', text: 'SAARA PAISA MERE HAWALE KARO!', style: 'shout', dur: 3.2 },
-    { t: 37.6, who: 'cashier', text: 'Aadhaar card dikhaiye.', dur: 2.6 },
-    { t: 41.6, who: 'cashier', text: 'Ye lijiye. Pachaas rupaye.', dur: 2.8 },
-    { t: 44.6, who: 'bunty', text: 'Yesss! DAKAITI SUCCESSFUL!', dur: 2.2 },
-    { t: 46.8, who: 'chintu', text: 'Bhai... ye toh tere hi account ka paisa tha.', dur: 3.4 },
-    { t: 52.6, who: 'cashier', text: 'Banana se dakaiti? Alarm toh banta hai.', dur: 3.0 },
-    { t: 55.6, who: 'bunty', text: 'BHAAAAGOOOO!!!', style: 'shout', dur: 2.0 },
+    { t: 5.0, who: 'bunty', text: 'KOI HILEGA NAHI! Ye DAKAITI hai!', hi: 'कोई हिलेगा नहीं! ये डकैती है!', style: 'shout', dur: 3.4 },
+    { t: 10.6, who: 'cashier', text: 'Line mein aaiye. Pehle token lijiye.', hi: 'लाइन में आइए। पहले टोकन लीजिए।', dur: 3.0 },
+    { t: 18.6, who: 'chintu', text: 'Bhai... 999?!', hi: 'भाई... नौ सौ निन्यानवे?!', dur: 2.4 },
+    { t: 21.0, who: 'bunty', text: '...Koi baat nahi. Wait karte hain.', hi: '...कोई बात नहीं। वेट करते हैं।', dur: 2.6 },
+    { t: 34.2, who: 'bunty', text: 'SAARA PAISA MERE HAWALE KARO!', hi: 'सारा पैसा मेरे हवाले करो!', style: 'shout', dur: 3.2 },
+    { t: 37.6, who: 'cashier', text: 'Aadhaar card dikhaiye.', hi: 'आधार कार्ड दिखाइए।', dur: 2.6 },
+    { t: 41.6, who: 'cashier', text: 'Ye lijiye. Pachaas rupaye.', hi: 'ये लीजिए। पचास रुपये।', dur: 2.8 },
+    { t: 44.6, who: 'bunty', text: 'Yesss! DAKAITI SUCCESSFUL!', hi: 'येस! डकैती सक्सेसफ़ुल!', dur: 2.2 },
+    { t: 46.8, who: 'chintu', text: 'Bhai... ye toh tere hi account ka paisa tha.', hi: 'भाई... ये तो तेरे ही अकाउंट का पैसा था।', dur: 3.4 },
+    { t: 52.6, who: 'cashier', text: 'Banana se dakaiti? Alarm toh banta hai.', hi: 'बनाना से डकैती? अलार्म तो बनता है।', dur: 3.0 },
+    { t: 55.6, who: 'bunty', text: 'BHAAAAGOOOO!!!', hi: 'भागो!!!', style: 'shout', dur: 2.0 },
   ],
   draw(ctx, t, S) {
     const shake = (t > 5 && t < 8.4 ? 6 : 0) + (t > ALARM && t < 58 ? 5 : 0) + (t > INT && t < INT + 0.3 ? 14 : 0);

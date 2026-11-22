@@ -15,8 +15,8 @@ export const coldOpen = {
   music: [[0, FREEZE, 'chase', 0.6]],
   sfx: [[0, 'siren', { dur: FREEZE, vol: 0.3 }], [0, 'engine', { dur: FREEZE, vol: 0.25 }], [3.0, 'explosion'], [FREEZE, 'scratch', { vol: 1.1 }], [REW, 'rewind', { dur: 1.6 }]],
   lines: [
-    { t: 1.0, who: 'chintu', text: 'BHAAAAI!!', style: 'shout', dur: 1.6 },
-    { t: 5.1, who: 'bunty', text: 'Haan bhai, ye main hoon. Soch rahe hoge... yahan tak pahuncha kaise?', dur: 4.2 },
+    { t: 1.0, who: 'chintu', text: 'BHAAAAI!!', hi: 'भाईईई!!', style: 'shout', dur: 1.6 },
+    { t: 5.1, who: 'bunty', text: 'Haan bhai, ye main hoon. Soch rahe hoge... yahan tak pahuncha kaise?', hi: 'हाँ भाई, ये मैं हूँ। सोच रहे होगे... यहाँ तक पहुँचा कैसे?', dur: 4.2 },
   ],
   draw(ctx, t, S) {
     if (t < FREEZE) {
@@ -122,7 +122,7 @@ export const loading = {
   music: [[0, 11, 'loading', 0.5]],
   sfx: [[8.3, 'grunt'], [9.0, 'push'], [9.6, 'ding'], [10.2, 'whoosh']],
   lines: [
-    { t: 8.2, who: 'chintu', text: 'Hatt! Chal na yaar!', dur: 1.7 },
+    { t: 8.2, who: 'chintu', text: 'Hatt! Chal na yaar!', hi: 'हट! चल ना यार!', dur: 1.7 },
   ],
   draw(ctx, t, S) {
     ctx.fillStyle = '#1b1030'; ctx.fillRect(0, 0, W, H);
@@ -144,8 +144,9 @@ export const loading = {
     txt(ctx, 'BUNTY', 1530, 150, { size: 110, fill: '#ff4fa3', lw: 18, shadow: '#000' });
     txt(ctx, '& CHINTU', 1530, 265, { size: 90, fill: '#ffd23f', lw: 16, shadow: '#000' });
     // tip box
-    let tip = TIPS[0][1];
-    for (const [tt, s] of TIPS) if (t >= tt) tip = s;
+    const tips = this.tips || TIPS;
+    let tip = tips[0][1];
+    for (const [tt, s] of tips) if (t >= tt) tip = s;
     rr(ctx, 1160, 420, 690, 300, 24); fs(ctx, 'rgba(255,255,255,0.06)', 4, '#ff4fa3');
     rr(ctx, 1190, 395, 120, 50, 12); fs(ctx, '#ff4fa3', 4);
     txt(ctx, 'TIP', 1250, 422, { size: 38, font: 'Bangers', fill: '#fff', lw: 0 });

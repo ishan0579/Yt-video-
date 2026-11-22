@@ -1,14 +1,18 @@
-# Bunty & Chintu: Episode 1 dubbing script
+# Bunty & Chintu: Episode 1 script
 
-Timestamps match `output/bunty_chintu_ep1_no_voices.mp4` (music + sound effects, no voices).
-Record each line starting at its timestamp. The speech bubble stays on screen for the "until" time.
+The final video uses this Hindi voice-over (Kokoro TTS). To re-dub with your own voice, use
+`output/bunty_chintu_ep1_no_voices.mp4` (music + sound effects only) and record each line at its timestamp.
+
+**Voice cast (Kokoro-82M Hindi voices, Apache-2.0):** Bunty = hm_omega · Chintu = hm_psi +2.5 semitones ·
+Police Uncle = hm_omega -3 · Lala Ji = hm_psi -4 · Cashier = hm_psi -1.5 (slow) · Bhola Uncle = hm_omega +1.5 ·
+Dadi = hf_beta +1.5 with vibrato · Mummy = hf_alpha · News Anchor = hf_beta
 
 ## 0:00.00: Cold open (freeze frame)
 
-| Time | Until | Character | Line |
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
 |---|---|---|---|
-| 0:01.00 | 0:02.60 | CHINTU | BHAAAAI!! *(shouting)* |
-| 0:05.10 | 0:09.30 | BUNTY | Haan bhai, ye main hoon. Soch rahe hoge... yahan tak pahuncha kaise? |
+| 0:01.00 | CHINTU | भाईईई!! | BHAAAAI!! *(shouting)* |
+| 0:05.10 | BUNTY | हाँ भाई, ये मैं हूँ। सोच रहे होगे... यहाँ तक पहुँचा कैसे? | Haan bhai, ye main hoon. Soch rahe hoge... yahan tak pahuncha kaise? |
 
 ## 0:11.00: Title
 
@@ -16,147 +20,195 @@ Record each line starting at its timestamp. The speech bubble stays on screen fo
 
 ## 0:20.00: Loading screen
 
-| Time | Until | Character | Line |
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
 |---|---|---|---|
-| 0:28.20 | 0:29.90 | CHINTU | Hatt! Chal na yaar! |
+| 0:28.20 | CHINTU | हट! चल ना यार! | Hatt! Chal na yaar! |
 
 ## 0:31.00: Spawn on the beach
 
-| Time | Until | Character | Line |
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
 |---|---|---|---|
-| 0:34.00 | 0:37.40 | BUNTY | Aa gaya main! PALM BAY CITY! |
-| 0:37.60 | 0:41.20 | BUNTY | Aaj se is sheher ka DON... main hoon! |
-| 0:42.60 | 0:44.80 | CHINTU | Mmmph! Mmmph!! |
-| 0:46.50 | 0:49.90 | CHINTU | Bhai... mera toh spawn hi bug ho gaya. |
-| 0:50.10 | 0:54.10 | BUNTY | Chintu, focus! Open world hai. Kuch bhi kar sakte hain! |
-| 0:54.20 | 0:58.50 | CHINTU | Kuch bhi? Toh chalo ghar chalte hain. Mummy wait kar rahi hogi. |
-| 0:58.60 | 1:01.20 | BUNTY | GHAR NAHI!! Pehle MISSION! *(shouting)* |
-| 1:02.00 | 1:05.20 | CHINTU | Chori?! Bhai, mummy ko pata chala toh... |
+| 0:34.00 | BUNTY | आ गया मैं! पाम बे सिटी! | Aa gaya main! PALM BAY CITY! |
+| 0:37.60 | BUNTY | आज से इस शहर का डॉन... मैं हूँ! | Aaj se is sheher ka DON... main hoon! |
+| 0:42.60 | CHINTU | म्म्म! म्म्म्म!! | Mmmph! Mmmph!! |
+| 0:46.50 | CHINTU | भाई... मेरा तो स्पॉन ही बग हो गया। | Bhai... mera toh spawn hi bug ho gaya. |
+| 0:50.10 | BUNTY | चिंटू, फोकस! ओपन वर्ल्ड है। कुछ भी कर सकते हैं! | Chintu, focus! Open world hai. Kuch bhi kar sakte hain! |
+| 0:54.20 | CHINTU | कुछ भी? तो चलो घर चलते हैं। मम्मी वेट कर रही होगी। | Kuch bhi? Toh chalo ghar chalte hain. Mummy wait kar rahi hogi. |
+| 0:58.60 | BUNTY | घर नहीं!! पहले मिशन! | GHAR NAHI!! Pehle MISSION! *(shouting)* |
+| 1:02.00 | CHINTU | चोरी?! भाई, मम्मी को पता चला तो... | Chori?! Bhai, mummy ko pata chala toh... |
 
 ## 1:09.00: Chapter 1: Gaadi Chori
 
-| Time | Until | Character | Line |
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
 |---|---|---|---|
-| 1:13.60 | 1:17.20 | BUNTY | Dekh Chintu... ab dekh PRO GAMER MOVE. |
-| 1:17.40 | 1:20.40 | CHINTU | Theek hai bhai, main lookout pe hoon! |
-| 1:23.00 | 1:26.00 | DADI | AE! Meri gaadi ko haath lagaya?! *(shouting)* |
-| 1:26.20 | 1:30.00 | BUNTY | D-Dadi ji... main toh bas iski dhool saaf kar raha tha! |
-| 1:36.00 | 1:39.40 | CHINTU | Bhai... Dadi ne humse better gaadi chalayi. |
-| 1:42.20 | 1:45.80 | BUNTY | Koi baat nahi! Asli SUPERCAR toh ye hai! |
-| 1:46.00 | 1:48.60 | CHINTU | Bhai... ye cycle hai. |
-| 1:48.80 | 1:52.60 | BUNTY | Haan. Aur iska engine... HUM hain! |
+| 1:13.60 | BUNTY | देख चिंटू... अब देख प्रो गेमर मूव। | Dekh Chintu... ab dekh PRO GAMER MOVE. |
+| 1:17.40 | CHINTU | ठीक है भाई, मैं लुकआउट पे हूँ! | Theek hai bhai, main lookout pe hoon! |
+| 1:23.00 | DADI | ए! मेरी गाड़ी को हाथ लगाया?! | AE! Meri gaadi ko haath lagaya?! *(shouting)* |
+| 1:26.20 | BUNTY | द... दादी जी... मैं तो बस इसकी धूल साफ़ कर रहा था! | D-Dadi ji... main toh bas iski dhool saaf kar raha tha! |
+| 1:36.00 | CHINTU | भाई... दादी ने हमसे बेहतर गाड़ी चलाई। | Bhai... Dadi ne humse better gaadi chalayi. |
+| 1:42.20 | BUNTY | कोई बात नहीं! असली सुपरकार तो ये है! | Koi baat nahi! Asli SUPERCAR toh ye hai! |
+| 1:46.00 | CHINTU | भाई... ये साइकिल है। | Bhai... ye cycle hai. |
+| 1:48.80 | BUNTY | हाँ। और इसका इंजन... हम हैं! | Haan. Aur iska engine... HUM hain! |
 
 ## 1:59.00: Chapter 2: Supercar (cycle chase)
 
-| Time | Until | Character | Line |
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
 |---|---|---|---|
-| 2:03.00 | 2:06.40 | CHINTU | Bhai, sab humein overtake kar rahe hain. |
-| 2:06.60 | 2:10.20 | BUNTY | Wo log jaldi mein hain. Hum... STYLE mein hain. |
-| 2:12.00 | 2:14.00 | CHINTU | ...kachhua bhi? |
-| 2:16.60 | 2:19.60 | CHINTU | Bhai! Ghanti bajane pe bhi star?! |
-| 2:20.20 | 2:23.60 | POLICE UNCLE | AE CYCLE WAALE! Helmet kahan hai?! *(shouting)* |
-| 2:23.80 | 2:26.60 | BUNTY | Pakad ke dikhao, uncle! |
-| 2:27.40 | 2:30.20 | POLICE UNCLE | Ruk ja! Abhi batata hoon! *(shouting)* |
-| 2:30.60 | 2:33.20 | CHINTU | Bhai jaldi pedal maar!! *(shouting)* |
-| 2:33.40 | 2:37.40 | BUNTY | Mere pair ab pair nahi rahe... PANKHE ban gaye hain! |
-| 2:37.60 | 2:39.60 | CHINTU | Bhai aage RAMP! *(shouting)* |
-| 2:39.80 | 2:42.20 | BUNTY | Pakad ke baith, Chintu! |
-| 2:42.80 | 2:46.60 | CHINTU | BHAAAAI HUM UD RAHE HAIN!! *(shouting)* |
-| 2:47.70 | 2:50.70 | POLICE UNCLE | Arre... ye toh ud gaye! |
+| 2:03.00 | CHINTU | भाई, सब हमें ओवरटेक कर रहे हैं। | Bhai, sab humein overtake kar rahe hain. |
+| 2:06.60 | BUNTY | वो लोग जल्दी में हैं। हम... स्टाइल में हैं। | Wo log jaldi mein hain. Hum... STYLE mein hain. |
+| 2:12.00 | CHINTU | ...कछुआ भी? | ...kachhua bhi? |
+| 2:16.60 | CHINTU | भाई! घंटी बजाने पे भी स्टार?! | Bhai! Ghanti bajane pe bhi star?! |
+| 2:20.20 | POLICE UNCLE | ए साइकिल वाले! हेलमेट कहाँ है?! | AE CYCLE WAALE! Helmet kahan hai?! *(shouting)* |
+| 2:23.80 | BUNTY | पकड़ के दिखाओ, अंकल! | Pakad ke dikhao, uncle! |
+| 2:27.40 | POLICE UNCLE | रुक जा! अभी बताता हूँ! | Ruk ja! Abhi batata hoon! *(shouting)* |
+| 2:30.60 | CHINTU | भाई जल्दी पैडल मार!! | Bhai jaldi pedal maar!! *(shouting)* |
+| 2:33.40 | BUNTY | मेरे पैर अब पैर नहीं रहे... पंखे बन गए हैं! | Mere pair ab pair nahi rahe... PANKHE ban gaye hain! |
+| 2:37.60 | CHINTU | भाई आगे रैंप! | Bhai aage RAMP! *(shouting)* |
+| 2:39.80 | BUNTY | पकड़ के बैठ, चिंटू! | Pakad ke baith, Chintu! |
+| 2:42.80 | CHINTU | भाईईई! हम उड़ रहे हैं!! | BHAAAAI HUM UD RAHE HAIN!! *(shouting)* |
+| 2:47.70 | POLICE UNCLE | अरे... ये तो उड़ गए! | Arre... ye toh ud gaye! |
 
 ## 2:51.50: Pool party DJ
 
-| Time | Until | Character | Line |
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
 |---|---|---|---|
-| 2:58.50 | 3:01.50 | LALA JI | Tum log... DJ ho kya? |
-| 3:02.90 | 3:05.50 | BUNTY | ...Haan! HUM hi DJ hain! |
-| 3:10.50 | 3:13.50 | CHINTU | Bhai ye toh HIT ho gaya! *(shouting)* |
-| 3:13.90 | 3:16.70 | BUNTY | Talent chhupta nahi, Chintu! |
-| 3:17.90 | 3:22.30 | LALA JI | Wah! Tum log kaam ke aadmi ho. Mere liye ek chhota sa kaam karoge? |
-| 3:22.40 | 3:24.40 | BUNTY | Haan haan! Bolo! |
-| 3:24.50 | 3:27.60 | LALA JI | Bank... lootna hai. |
-| 3:27.80 | 3:29.10 | BUNTY | HAAN! *(shouting)* |
-| 3:29.20 | 3:30.40 | CHINTU | NAHI! *(shouting)* |
-| 3:30.50 | 3:31.80 | BUNTY | HAAN!! *(shouting)* |
-| 3:31.90 | 3:33.80 | CHINTU | ...haan. |
+| 2:58.50 | LALA JI | तुम लोग... डीजे हो क्या? | Tum log... DJ ho kya? |
+| 3:02.90 | BUNTY | ...हाँ! हम ही डीजे हैं! | ...Haan! HUM hi DJ hain! |
+| 3:10.50 | CHINTU | भाई ये तो हिट हो गया! | Bhai ye toh HIT ho gaya! *(shouting)* |
+| 3:13.90 | BUNTY | टैलेंट छुपता नहीं, चिंटू! | Talent chhupta nahi, Chintu! |
+| 3:17.90 | LALA JI | वाह! तुम लोग काम के आदमी हो। मेरे लिए एक छोटा सा काम करोगे? | Wah! Tum log kaam ke aadmi ho. Mere liye ek chhota sa kaam karoge? |
+| 3:22.40 | BUNTY | हाँ हाँ! बोलो! | Haan haan! Bolo! |
+| 3:24.50 | LALA JI | बैंक... लूटना है। | Bank... lootna hai. |
+| 3:27.80 | BUNTY | हाँ! | HAAN! *(shouting)* |
+| 3:29.20 | CHINTU | नहीं! | NAHI! *(shouting)* |
+| 3:30.50 | BUNTY | हाँ!! | HAAN!! *(shouting)* |
+| 3:31.90 | CHINTU | ...हाँ। | ...haan. |
 
-## 3:41.50: Chapter 3: Master Plan
+## 3:41.50: Fast travel (map + loading)
 
-| Time | Until | Character | Line |
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
 |---|---|---|---|
-| 3:43.50 | 3:46.60 | BUNTY | Toh suno. Ye hai mera MASTER PLAN. |
-| 3:47.10 | 3:49.70 | BUNTY | Step 1: Bank jaayenge. |
-| 3:50.20 | 3:52.50 | BUNTY | Step 2: Paisa lenge. |
-| 3:53.50 | 3:56.30 | BUNTY | Aur Step 4... PARTYYYY! *(shouting)* |
-| 3:56.50 | 3:59.30 | CHINTU | Bhai... Step 3 kya hai? |
-| 3:59.50 | 4:01.70 | BUNTY | Wo... surprise hai. |
-| 4:01.90 | 4:05.10 | CHINTU | Aur agar pakde gaye toh? Escape plan kya hai? |
-| 4:05.30 | 4:08.90 | BUNTY | Escape plan ye hai ki... hum pakde hi NAHI jaayenge. |
-| 4:12.90 | 4:16.10 | CHINTU | ...plan toh solid hai bhai. |
+| 3:42.50 | BUNTY | गैराज दूर है। फ़ास्ट ट्रैवल करते हैं! | Garage door hai. Fast travel karte hain! |
+| 3:46.10 | CHINTU | भाई, फ़ास्ट ट्रैवल का लोडिंग स्क्रीन याद है ना? | Bhai, fast travel ka loading screen yaad hai na? |
+| 3:49.90 | BUNTY | इस बार जल्दी होगा। ट्रस्ट मी! | Is baar jaldi hoga. Trust me! |
+| 3:58.80 | CHINTU | फिर से निन्यानवे पे अटक गया! | Phir se 99 pe atak gaya! |
+| 4:01.80 | BUNTY | देखा? एकदम फ़ास्ट! | Dekha? Ekdum fast! |
+| 4:04.20 | CHINTU | ...हाँ भाई। बिल्कुल। | ...haan bhai. Bilkul. |
 
-## 4:19.50: Chapter 4: The Heist
+## 4:07.50: Chapter 3: Master Plan
 
-| Time | Until | Character | Line |
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
 |---|---|---|---|
-| 4:24.50 | 4:27.90 | BUNTY | KOI HILEGA NAHI! Ye DAKAITI hai! *(shouting)* |
-| 4:30.10 | 4:33.10 | CASHIER | Line mein aaiye. Pehle token lijiye. |
-| 4:38.10 | 4:40.50 | CHINTU | Bhai... 999?! |
-| 4:40.50 | 4:43.10 | BUNTY | ...Koi baat nahi. Wait karte hain. |
-| 4:53.70 | 4:56.90 | BUNTY | SAARA PAISA MERE HAWALE KARO! *(shouting)* |
-| 4:57.10 | 4:59.70 | CASHIER | Aadhaar card dikhaiye. |
-| 5:01.10 | 5:03.90 | CASHIER | Ye lijiye. Pachaas rupaye. |
-| 5:04.10 | 5:06.30 | BUNTY | Yesss! DAKAITI SUCCESSFUL! |
-| 5:06.30 | 5:09.70 | CHINTU | Bhai... ye toh tere hi account ka paisa tha. |
-| 5:12.10 | 5:15.10 | CASHIER | Banana se dakaiti? Alarm toh banta hai. |
-| 5:15.10 | 5:17.10 | BUNTY | BHAAAAGOOOO!!! *(shouting)* |
+| 4:09.50 | BUNTY | तो सुनो। ये है मेरा मास्टर प्लान। | Toh suno. Ye hai mera MASTER PLAN. |
+| 4:13.10 | BUNTY | स्टेप वन: बैंक जाएँगे। | Step 1: Bank jaayenge. |
+| 4:16.20 | BUNTY | स्टेप टू: पैसा लेंगे। | Step 2: Paisa lenge. |
+| 4:19.50 | BUNTY | और स्टेप फ़ोर... पार्टी! | Aur Step 4... PARTYYYY! *(shouting)* |
+| 4:22.50 | CHINTU | भाई... स्टेप थ्री क्या है? | Bhai... Step 3 kya hai? |
+| 4:25.50 | BUNTY | वो... सरप्राइज़ है। | Wo... surprise hai. |
+| 4:27.90 | CHINTU | और अगर पकड़े गए तो? एस्केप प्लान क्या है? | Aur agar pakde gaye toh? Escape plan kya hai? |
+| 4:31.30 | BUNTY | एस्केप प्लान ये है कि... हम पकड़े ही नहीं जाएँगे। | Escape plan ye hai ki... hum pakde hi NAHI jaayenge. |
+| 4:38.90 | CHINTU | ...प्लान तो सॉलिड है भाई। | ...plan toh solid hai bhai. |
 
-## 5:20.50: Chapter 5: Auto Wala Stunt
+## 4:45.50: Chapter 3.5: Disguise Shopping
 
-| Time | Until | Character | Line |
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
 |---|---|---|---|
-| 5:21.10 | 5:24.17 | CHINTU | Bhai, tu auto chalana jaanta hai?! |
-| 5:24.70 | 5:27.42 | BUNTY | Nahi! Par aaj seekh jaaunga! |
-| 5:28.50 | 5:30.76 | CHINTU | Bhai wo kyun phata?! *(shouting)* |
-| 5:31.30 | 5:35.50 | BUNTY | Open world hai bhai! Yahan sab apne aap phat-ta hai! |
-| 5:37.80 | 5:40.06 | POLICE (HELICOPTER) | AUTO ROK DO! Turant! *(shouting)* |
-| 5:41.10 | 5:44.70 | BUNTY | Meter chalu hai, uncle! Rukega nahi! |
-| 5:45.50 | 5:48.34 | CHINTU | Bhai auto ek taraf jhuk gaya!! *(shouting)* |
-| 5:48.70 | 5:51.54 | BUNTY | Isko kehte hain... DESI DRIFT! |
-| 5:52.10 | 5:54.88 | CHINTU | Bhai aage pul toota hua hai!! *(shouting)* |
-| 5:54.80 | 5:57.00 | BUNTY | Bollywood stunt time! |
-| 5:57.90 | 6:01.50 | CHINTU | MUMMYYYYY!!! *(shouting)* |
-| 6:02.50 | 6:05.30 | BUNTY | HUM BACH GAYE!! *(shouting)* |
-| 6:05.10 | 6:07.30 | CHINTU | Bhai tu legend hai! |
+| 4:47.70 | BHOLA UNCLE | आइए आइए! भोला कॉस्ट्यूम सेंटर में स्वागत है! | Aaiye aaiye! Bhola Costume Centre mein swagat hai! |
+| 4:51.50 | BUNTY | अंकल, बैंक लूटने के लिए कोई डिस्गाइज़ दिखाओ। | Uncle, bank lootne ke liye koi disguise dikhao. |
+| 4:55.30 | BHOLA UNCLE | बिल्कुल! एक से बढ़कर एक! | Bilkul! Ek se badhkar ek! |
+| 4:58.40 | CHINTU | भाई, ये तो वेस्टर्न फ़िल्म है। | Bhai, ye toh Western film hai. |
+| 5:01.70 | BUNTY | मैं हूँ... कैप्टन बंटी! | Main hoon... CAPTAIN BUNTY! |
+| 5:05.10 | CHINTU | भाई, ये डकैती है, शादी नहीं! | Bhai, ye dakaiti hai, shaadi nahi! |
+| 5:08.50 | BHOLA UNCLE | ये वाला अस्सी का डिस्को स्पेशल है। | Ye wala 80s disco special hai. |
+| 5:11.90 | BUNTY | परफ़ेक्ट! एकदम प्रोफ़ेशनल डकैत। | Perfect! Ekdum professional dakait. |
+| 5:15.10 | BHOLA UNCLE | टोटल हुए... पाँच सौ रुपये। | Total huye... paanch sau rupaye. |
+| 5:18.30 | BUNTY | अंकल... उधार चलेगा? | Uncle... udhaar chalega? |
+| 5:21.10 | BHOLA UNCLE | मास्क उधार पे ले जाओ। और तुम्हारे दोस्त के लिए... ये फ़्री वाला। | Mask udhaar pe le jao. Aur tumhare dost ke liye... ye free wala. |
+| 5:26.10 | CHINTU | भाई... कुछ दिख नहीं रहा। | Bhai... kuch dikh nahi raha. |
 
-## 6:07.50: Mission Failed (Mummy)
+## 5:31.50: Chapter 4: The Heist
 
-| Time | Until | Character | Line |
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
 |---|---|---|---|
-| 6:10.90 | 6:14.50 | MUMMY | CHINTU!! Raat ke 9 baje kahan ghoom raha hai?! *(shouting)* |
-| 6:14.60 | 6:17.80 | CHINTU | M-Mummy... main toh tuition gaya tha! |
-| 6:18.00 | 6:21.60 | MUMMY | Tuition? AUTO mein? POLICE ke saath?! *(shouting)* |
-| 6:21.80 | 6:24.80 | POLICE UNCLE | Madam, ye dono bahut bade criminal— |
-| 6:25.10 | 6:28.10 | POLICE UNCLE | ...hum toh bas jaa rahe the. Namaste ji! |
-| 6:28.70 | 6:31.10 | BUNTY | Aunty ji, hum samjha sakte hain... |
-| 6:38.50 | 6:42.10 | BUNTY | ...ye chappal heat-seeking thi kya? |
+| 5:36.50 | BUNTY | कोई हिलेगा नहीं! ये डकैती है! | KOI HILEGA NAHI! Ye DAKAITI hai! *(shouting)* |
+| 5:42.10 | CASHIER | लाइन में आइए। पहले टोकन लीजिए। | Line mein aaiye. Pehle token lijiye. |
+| 5:50.10 | CHINTU | भाई... नौ सौ निन्यानवे?! | Bhai... 999?! |
+| 5:52.50 | BUNTY | ...कोई बात नहीं। वेट करते हैं। | ...Koi baat nahi. Wait karte hain. |
+| 6:05.70 | BUNTY | सारा पैसा मेरे हवाले करो! | SAARA PAISA MERE HAWALE KARO! *(shouting)* |
+| 6:09.10 | CASHIER | आधार कार्ड दिखाइए। | Aadhaar card dikhaiye. |
+| 6:13.10 | CASHIER | ये लीजिए। पचास रुपये। | Ye lijiye. Pachaas rupaye. |
+| 6:16.10 | BUNTY | येस! डकैती सक्सेसफ़ुल! | Yesss! DAKAITI SUCCESSFUL! |
+| 6:18.30 | CHINTU | भाई... ये तो तेरे ही अकाउंट का पैसा था। | Bhai... ye toh tere hi account ka paisa tha. |
+| 6:24.10 | CASHIER | बनाना से डकैती? अलार्म तो बनता है। | Banana se dakaiti? Alarm toh banta hai. |
+| 6:27.10 | BUNTY | भागो!!! | BHAAAAGOOOO!!! *(shouting)* |
 
-## 6:45.50: Respawn at the hospital
+## 6:32.50: Breaking News
 
-| Time | Until | Character | Line |
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
 |---|---|---|---|
-| 6:53.00 | 6:56.20 | CHINTU | Bhai... toh humne aaj kamaya kya? |
-| 6:56.50 | 6:59.90 | BUNTY | Experience, Chintu. EXPERIENCE. |
-| 7:02.50 | 7:05.30 | BUNTY | ...Toh? Ek baar aur khelein? |
-| 7:05.50 | 7:07.50 | CHINTU | BHAIII!!! *(shouting)* |
-| 7:09.90 | 7:12.50 | MUMMY | Kya chal raha hai yahan? |
-| 7:16.70 | 7:19.30 | MUMMY | Hmm. Achhe bachche. |
-| 7:20.50 | 7:22.90 | BUNTY | ...kal phir chalein? |
-| 7:23.10 | 7:25.10 | CHINTU | ...haan. |
+| 6:33.50 | NEWS ANCHOR | नमस्कार! आप देख रहे हैं पाम बे न्यूज़। | Namaskar! Aap dekh rahe hain Palm Bay News. |
+| 6:37.10 | NEWS ANCHOR | आज शहर के बैंक में एक अजीब डकैती हुई। | Aaj shehar ke bank mein ek ajeeb dakaiti hui. |
+| 6:40.90 | NEWS ANCHOR | डकैत के पास हथियार था... एक केला। | Dakait ke paas hathiyaar tha... ek kela. |
+| 6:44.70 | NEWS ANCHOR | उन्होंने लाइन में लगकर, टोकन लेकर, अपने ही अकाउंट से पचास रुपये लूटे। | Unhone line mein lagkar, token lekar, apne hi account se pachaas rupaye loote. |
+| 6:50.30 | POLICE UNCLE | हम उन्हें ज़रूर पकड़ेंगे। बस पहले... चाय पी लें। | Hum unhe zaroor pakdenge. Bas pehle... chai pee lein. |
+| 6:54.40 | POLICE UNCLE | और हाँ... हेलमेट ज़रूर पहनना! | Aur haan... helmet zaroor pehnna! |
+| 6:57.40 | NEWS ANCHOR | ख़बर लिखे जाने तक, डकैत एक ऑटो में फ़रार हैं। बने रहिए हमारे साथ! | Khabar likhe jaane tak, dakait ek auto mein faraar hain. Bane rahiye hamare saath! |
 
-## 7:26.50: Outro + end screen
+## 7:06.50: Chapter 5: Auto Wala Stunt
 
-| Time | Until | Character | Line |
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
 |---|---|---|---|
-| 7:31.50 | 7:34.70 | BUNTY | Video pasand aaya toh LIKE karo! |
-| 7:34.90 | 7:37.30 | CHINTU | Aur SUBSCRIBE karo! |
-| 7:37.50 | 7:41.10 | BUNTY | Warna... wanted level badh jaayega! |
+| 7:07.10 | CHINTU | भाई, तू ऑटो चलाना जानता है?! | Bhai, tu auto chalana jaanta hai?! |
+| 7:10.70 | BUNTY | नहीं! पर आज सीख जाऊँगा! | Nahi! Par aaj seekh jaaunga! |
+| 7:14.50 | CHINTU | भाई वो क्यों फटा?! | Bhai wo kyun phata?! *(shouting)* |
+| 7:17.30 | BUNTY | ओपन वर्ल्ड है भाई! यहाँ सब अपने आप फटता है! | Open world hai bhai! Yahan sab apne aap phat-ta hai! |
+| 7:23.80 | POLICE (HELICOPTER) | ऑटो रोक दो! तुरंत! | AUTO ROK DO! Turant! *(shouting)* |
+| 7:27.10 | BUNTY | मीटर चालू है, अंकल! रुकेगा नहीं! | Meter chalu hai, uncle! Rukega nahi! |
+| 7:31.50 | CHINTU | भाई ऑटो एक तरफ़ झुक गया!! | Bhai auto ek taraf jhuk gaya!! *(shouting)* |
+| 7:34.70 | BUNTY | इसको कहते हैं... देसी ड्रिफ़्ट! | Isko kehte hain... DESI DRIFT! |
+| 7:38.10 | CHINTU | भाई आगे पुल टूटा हुआ है!! | Bhai aage pul toota hua hai!! *(shouting)* |
+| 7:40.80 | BUNTY | बॉलीवुड स्टंट टाइम! | Bollywood stunt time! |
+| 7:43.90 | CHINTU | मम्मीईईई!!! | MUMMYYYYY!!! *(shouting)* |
+| 7:48.50 | BUNTY | हम बच गए!! | HUM BACH GAYE!! *(shouting)* |
+| 7:51.10 | CHINTU | भाई तू लेजेंड है! | Bhai tu legend hai! |
+
+## 7:53.50: Mission Failed (Mummy)
+
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
+|---|---|---|---|
+| 7:56.90 | MUMMY | चिंटू!! रात के नौ बजे कहाँ घूम रहा है?! | CHINTU!! Raat ke 9 baje kahan ghoom raha hai?! *(shouting)* |
+| 8:00.60 | CHINTU | म... मम्मी... मैं तो ट्यूशन गया था! | M-Mummy... main toh tuition gaya tha! |
+| 8:04.00 | MUMMY | ट्यूशन? ऑटो में? पुलिस के साथ?! | Tuition? AUTO mein? POLICE ke saath?! *(shouting)* |
+| 8:07.80 | POLICE UNCLE | मैडम, ये दोनों बहुत बड़े क्रिमिनल... | Madam, ye dono bahut bade criminal— |
+| 8:11.10 | POLICE UNCLE | ...हम तो बस जा रहे थे। नमस्ते जी! | ...hum toh bas jaa rahe the. Namaste ji! |
+| 8:14.70 | BUNTY | आंटी जी, हम समझा सकते हैं... | Aunty ji, hum samjha sakte hain... |
+| 8:24.50 | BUNTY | ...ये चप्पल हीट सीकिंग थी क्या? | ...ye chappal heat-seeking thi kya? |
+
+## 8:31.50: Respawn at the hospital
+
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
+|---|---|---|---|
+| 8:39.00 | CHINTU | भाई... तो हमने आज कमाया क्या? | Bhai... toh humne aaj kamaya kya? |
+| 8:42.50 | BUNTY | एक्सपीरियंस, चिंटू। एक्सपीरियंस। | Experience, Chintu. EXPERIENCE. |
+| 8:48.50 | BUNTY | ...तो? एक बार और खेलें? | ...Toh? Ek baar aur khelein? |
+| 8:51.50 | CHINTU | भाईईई!!! | BHAIII!!! *(shouting)* |
+| 8:55.90 | MUMMY | क्या चल रहा है यहाँ? | Kya chal raha hai yahan? |
+| 9:02.70 | MUMMY | हम्म। अच्छे बच्चे। | Hmm. Achhe bachche. |
+| 9:06.50 | BUNTY | ...कल फिर चलें? | ...kal phir chalein? |
+| 9:09.10 | CHINTU | ...हाँ। | ...haan. |
+
+## 9:12.50: Dadi ka comeback (post-credits)
+
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
+|---|---|---|---|
+| 9:15.50 | POLICE UNCLE | मैडम, इतनी रात को इतनी तेज़ गाड़ी? | Madam, itni raat ko itni tez gaadi? |
+| 9:19.10 | DADI | रेस लगाएगा, बेटा? | Race lagayega, beta? |
+| 9:24.70 | POLICE UNCLE | ...नहीं मैडम। मैं तो चाय पीने जा रहा हूँ। | ...Nahi madam. Main toh chai peene jaa raha hoon. |
+
+## 9:32.50: Outro + end screen
+
+| Time | Character | Hindi (voice) | Hinglish (bubble) |
+|---|---|---|---|
+| 9:37.50 | BUNTY | वीडियो पसंद आया तो लाइक करो! | Video pasand aaya toh LIKE karo! |
+| 9:40.90 | CHINTU | और सब्सक्राइब करो! | Aur SUBSCRIBE karo! |
+| 9:43.50 | BUNTY | वरना... वांटेड लेवल बढ़ जाएगा! | Warna... wanted level badh jaayega! |

@@ -6,3 +6,4 @@ __pycache__/
 # full-quality renders are >100 MB (GitHub limit); rebuild with ./build.sh
 output/bunty_chintu_ep1.mp4
 output/bunty_chintu_ep1_no_voices.mp4
+assets/tts/

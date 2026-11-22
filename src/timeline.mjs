@@ -8,7 +8,7 @@ for (const s of SCENES) {
   out.scenes.push({ id: s.id, start, dur: s.dur });
   for (const l of s._lines) {
     if (l.t >= s.dur) continue;
-    out.lines.push({ t: start + l.t, dur: Math.min(l.dur, s.dur - l.t), who: l.who, voice: l.voice || l.who, text: l.text, style: l.style || 'normal', mega: !!l.mega, syl: l.syl, name: l.name });
+    out.lines.push({ id: l.id, t: start + l.t, dur: Math.min(l.dur, s.dur - l.t), slot: l.slot, who: l.who, voice: l.voice || l.who, text: l.text, hi: l.hi, fx: l.fx, style: l.style || 'normal', mega: !!l.mega, syl: l.syl, name: l.name, audioDur: l.audioDur });
   }
   for (const [t, name, o = {}] of s.sfx || []) if (t < s.dur) out.sfx.push({ t: start + t, name, ...o, dur: o.dur != null ? Math.min(o.dur, s.dur - t) : undefined });
   for (const [a, b, cue, vol] of s.music || []) if (cue !== 'none') out.music.push({ from: start + a, to: start + Math.min(b, s.dur), cue, vol, sceneStart: start });

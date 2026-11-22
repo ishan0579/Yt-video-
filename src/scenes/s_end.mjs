@@ -24,13 +24,13 @@ export const mummy = {
   music: [[0, 1.6, 'chase', 0.4], [2.0, FAIL, 'tense', 0.45], [FAIL, 32, 'sad', 0.6]],
   sfx: [[0, 'skid'], [1.6, 'scratch'], [10.4, 'siren', { dur: 4, vol: 0.3 }], [18.0, 'gulp'], [20.6, 'zoom'], [23.0, 'dun'], [THROW, 'whoosh'], [24.9, 'lockon'], [HIT1, 'thwack', { vol: 1.2 }], [HIT2, 'thwack', { vol: 1.2 }], [FAIL, 'fail']],
   lines: [
-    { t: 3.4, who: 'mummy', text: 'CHINTU!! Raat ke 9 baje kahan ghoom raha hai?!', style: 'shout', dur: 3.6 },
-    { t: 7.1, who: 'chintu', text: 'M-Mummy... main toh tuition gaya tha!', dur: 3.2 },
-    { t: 10.5, who: 'mummy', text: 'Tuition? AUTO mein? POLICE ke saath?!', style: 'shout', dur: 3.6 },
-    { t: 14.3, who: 'police', text: 'Madam, ye dono bahut bade criminal—', dur: 3.0 },
-    { t: 17.6, who: 'police', text: '...hum toh bas jaa rahe the. Namaste ji!', dur: 3.0 },
-    { t: 21.2, who: 'bunty', text: 'Aunty ji, hum samjha sakte hain...', dur: 2.4 },
-    { t: 31.0, who: 'bunty', text: '...ye chappal heat-seeking thi kya?', dur: 3.6 },
+    { t: 3.4, who: 'mummy', text: 'CHINTU!! Raat ke 9 baje kahan ghoom raha hai?!', hi: 'चिंटू!! रात के नौ बजे कहाँ घूम रहा है?!', style: 'shout', dur: 3.6 },
+    { t: 7.1, who: 'chintu', text: 'M-Mummy... main toh tuition gaya tha!', hi: 'म... मम्मी... मैं तो ट्यूशन गया था!', dur: 3.2 },
+    { t: 10.5, who: 'mummy', text: 'Tuition? AUTO mein? POLICE ke saath?!', hi: 'ट्यूशन? ऑटो में? पुलिस के साथ?!', style: 'shout', dur: 3.6 },
+    { t: 14.3, who: 'police', text: 'Madam, ye dono bahut bade criminal—', hi: 'मैडम, ये दोनों बहुत बड़े क्रिमिनल...', dur: 3.0 },
+    { t: 17.6, who: 'police', text: '...hum toh bas jaa rahe the. Namaste ji!', hi: '...हम तो बस जा रहे थे। नमस्ते जी!', dur: 3.0 },
+    { t: 21.2, who: 'bunty', text: 'Aunty ji, hum samjha sakte hain...', hi: 'आंटी जी, हम समझा सकते हैं...', dur: 2.4 },
+    { t: 31.0, who: 'bunty', text: '...ye chappal heat-seeking thi kya?', hi: '...ये चप्पल हीट सीकिंग थी क्या?', dur: 3.6 },
   ],
   draw(ctx, t, S) {
     ctx.save();
@@ -124,14 +124,14 @@ export const hospital = {
   music: [[0, 17, 'sad', 0.3], [17, 23, 'chill', 0.25], [27, 38, 'sneaky', 0.25]],
   sfx: [[0, 'beep', { dur: 41, vol: 0.25 }], [4.5, 'kaching', { reverse: true }], [20.6, 'whoosh'], [22.4, 'bonk'], [23.0, 'door'], [27.2, 'snore', { dur: 6 }], [34.0, 'door']],
   lines: [
-    { t: 7.5, who: 'chintu', text: 'Bhai... toh humne aaj kamaya kya?', dur: 3.2 },
-    { t: 11.0, who: 'bunty', text: 'Experience, Chintu. EXPERIENCE.', dur: 3.4 },
-    { t: 17.0, who: 'bunty', text: '...Toh? Ek baar aur khelein?', dur: 2.8 },
-    { t: 20.0, who: 'chintu', text: 'BHAIII!!!', style: 'shout', dur: 2.0 },
-    { t: 24.4, who: 'mummy', text: 'Kya chal raha hai yahan?', dur: 2.6 },
-    { t: 31.2, who: 'mummy', text: 'Hmm. Achhe bachche.', dur: 2.6 },
-    { t: 35.0, who: 'bunty', text: '...kal phir chalein?', dur: 2.4, size: 36 },
-    { t: 37.6, who: 'chintu', text: '...haan.', dur: 2.0, size: 34 },
+    { t: 7.5, who: 'chintu', text: 'Bhai... toh humne aaj kamaya kya?', hi: 'भाई... तो हमने आज कमाया क्या?', dur: 3.2 },
+    { t: 11.0, who: 'bunty', text: 'Experience, Chintu. EXPERIENCE.', hi: 'एक्सपीरियंस, चिंटू। एक्सपीरियंस।', dur: 3.4 },
+    { t: 17.0, who: 'bunty', text: '...Toh? Ek baar aur khelein?', hi: '...तो? एक बार और खेलें?', dur: 2.8 },
+    { t: 20.0, who: 'chintu', text: 'BHAIII!!!', hi: 'भाईईई!!!', style: 'shout', dur: 2.0 },
+    { t: 24.4, who: 'mummy', text: 'Kya chal raha hai yahan?', hi: 'क्या चल रहा है यहाँ?', dur: 2.6 },
+    { t: 31.2, who: 'mummy', text: 'Hmm. Achhe bachche.', hi: 'हम्म। अच्छे बच्चे।', dur: 2.6 },
+    { t: 35.0, who: 'bunty', text: '...kal phir chalein?', hi: '...कल फिर चलें?', fx: 'whisper', dur: 2.4, size: 36 },
+    { t: 37.6, who: 'chintu', text: '...haan.', hi: '...हाँ।', fx: 'whisper', dur: 2.0, size: 34 },
   ],
   draw(ctx, t, S) {
     ctx.save(); camera(ctx, t, { x: 960, y: 590, zoom: 1.1 });
@@ -188,9 +188,9 @@ export const outro = {
   music: [[0, 36, 'title', 0.6]],
   sfx: [[1.0, 'whoosh'], [13.0, 'star'], [13.3, 'star'], [13.6, 'star'], [13.9, 'star'], [14.2, 'star'], [16.0, 'click'], [16.2, 'ding'], [16.6, 'bell']],
   lines: [
-    { t: 5.0, who: 'bunty', text: 'Video pasand aaya toh LIKE karo!', dur: 3.2 },
-    { t: 8.4, who: 'chintu', text: 'Aur SUBSCRIBE karo!', dur: 2.4 },
-    { t: 11.0, who: 'bunty', text: 'Warna... wanted level badh jaayega!', dur: 3.6 },
+    { t: 5.0, who: 'bunty', text: 'Video pasand aaya toh LIKE karo!', hi: 'वीडियो पसंद आया तो लाइक करो!', dur: 3.2 },
+    { t: 8.4, who: 'chintu', text: 'Aur SUBSCRIBE karo!', hi: 'और सब्सक्राइब करो!', dur: 2.4 },
+    { t: 11.0, who: 'bunty', text: 'Warna... wanted level badh jaayega!', hi: 'वरना... वांटेड लेवल बढ़ जाएगा!', dur: 3.6 },
   ],
   draw(ctx, t, S) {
     const camX = t * 60;

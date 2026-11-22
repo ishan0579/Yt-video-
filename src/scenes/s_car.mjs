@@ -20,14 +20,14 @@ export default {
     [30.8, 'choir', { dur: 2.2 }], [44.2, 'bell'], [44.8, 'pop'], [46.2, 'bell'],
   ],
   lines: [
-    { t: 4.6, who: 'bunty', text: 'Dekh Chintu... ab dekh PRO GAMER MOVE.', dur: 3.6 },
-    { t: 8.4, who: 'chintu', text: 'Theek hai bhai, main lookout pe hoon!', dur: 3.0 },
-    { t: 14.0, who: 'dadi', text: 'AE! Meri gaadi ko haath lagaya?!', style: 'shout', dur: 3.0 },
-    { t: 17.2, who: 'bunty', text: 'D-Dadi ji... main toh bas iski dhool saaf kar raha tha!', dur: 3.8 },
-    { t: 27.0, who: 'chintu', text: 'Bhai... Dadi ne humse better gaadi chalayi.', dur: 3.4 },
-    { t: 33.2, who: 'bunty', text: 'Koi baat nahi! Asli SUPERCAR toh ye hai!', dur: 3.6 },
-    { t: 37.0, who: 'chintu', text: 'Bhai... ye cycle hai.', dur: 2.6 },
-    { t: 39.8, who: 'bunty', text: 'Haan. Aur iska engine... HUM hain!', dur: 3.8 },
+    { t: 4.6, who: 'bunty', text: 'Dekh Chintu... ab dekh PRO GAMER MOVE.', hi: 'देख चिंटू... अब देख प्रो गेमर मूव।', dur: 3.6 },
+    { t: 8.4, who: 'chintu', text: 'Theek hai bhai, main lookout pe hoon!', hi: 'ठीक है भाई, मैं लुकआउट पे हूँ!', dur: 3.0 },
+    { t: 14.0, who: 'dadi', text: 'AE! Meri gaadi ko haath lagaya?!', hi: 'ए! मेरी गाड़ी को हाथ लगाया?!', style: 'shout', dur: 3.0 },
+    { t: 17.2, who: 'bunty', text: 'D-Dadi ji... main toh bas iski dhool saaf kar raha tha!', hi: 'द... दादी जी... मैं तो बस इसकी धूल साफ़ कर रहा था!', dur: 3.8 },
+    { t: 27.0, who: 'chintu', text: 'Bhai... Dadi ne humse better gaadi chalayi.', hi: 'भाई... दादी ने हमसे बेहतर गाड़ी चलाई।', dur: 3.4 },
+    { t: 33.2, who: 'bunty', text: 'Koi baat nahi! Asli SUPERCAR toh ye hai!', hi: 'कोई बात नहीं! असली सुपरकार तो ये है!', dur: 3.6 },
+    { t: 37.0, who: 'chintu', text: 'Bhai... ye cycle hai.', hi: 'भाई... ये साइकिल है।', dur: 2.6 },
+    { t: 39.8, who: 'bunty', text: 'Haan. Aur iska engine... HUM hain!', hi: 'हाँ। और इसका इंजन... हम हैं!', dur: 3.8 },
   ],
   draw(ctx, t, S) {
     sky(ctx, t, 'day', { horizon: 600 });

@@ -9,6 +9,8 @@ export const CHARS = {
   mummy: { name: 'MUMMY', tag: '#2a9d8f', skin: '#c99068', hair: 'bun', hairC: '#1d1416', outfit: 'saree', top: '#e5383b', border: '#ffd23f', shoe: '#8d5524', bindi: true, base: 0.95, belly: 0.25, headR: 58 },
   lala: { name: 'LALA JI', tag: '#f4a261', skin: '#e3a87a', hair: 'bald', hairC: '#d9d9d9', outfit: 'robe', top: '#ffffff', pants: '#ffffff', shoe: '#c9a227', glasses: 'gold', chain: true, base: 1.05, belly: 1.0, headR: 60, mustache: true },
   cashier: { name: 'CASHIER', tag: '#6c757d', skin: '#b5835a', hair: 'side', hairC: '#2b2b2b', top: '#f1faee', tie: '#e63946', pants: '#343a40', shoe: '#111', glasses: 'square', base: 0.95, belly: 0.1, headR: 58 },
+  anchor: { name: 'NEWS ANCHOR', tag: '#d62828', skin: '#d9a066', hair: 'bob', hairC: '#2b1a12', top: '#1d3557', blazer: true, pants: '#1d3557', shoe: '#111', base: 0.95, belly: 0.1, headR: 58 },
+  bhola: { name: 'BHOLA UNCLE', tag: '#e76f51', skin: '#c68642', hair: 'curly', hairC: '#c9c9c9', top: '#f4a261', pants: '#fdf0d5', shoe: '#6b4226', glasses: 'round', mustache: true, mustacheC: '#d9d9d9', base: 1.0, belly: 0.7, headR: 60 },
   nurse: { name: 'NURSE', tag: '#4cc9f0', skin: '#d9a066', hair: 'bun', hairC: '#2b1a12', top: '#bde0fe', pants: '#bde0fe', shoe: '#fff', base: 0.92, belly: 0.1, headR: 58, nurseCap: true },
 };
 const GUEST_TOPS = ['#ff4fa3', '#4cc9f0', '#90be6d', '#f9c74f', '#f3722c', '#b5179e', '#00b4d8', '#ffafcc'];
@@ -208,6 +210,11 @@ export function drawChar(ctx, id, o = {}) {
       for (let i = 0; i < 3; i++) { circle(ctx, 14, top + 22 + i * 22, 3.5); fs(ctx, '#7a5a2a', 0); }
       starPath(ctx, -14, top + 34, 11, 5); fs(ctx, '#ffd23f', 3);
     }
+    if (C.blazer) {
+      ctx.beginPath(); ctx.moveTo(-10, top + 2); ctx.lineTo(8, top + 46); ctx.lineTo(26, top + 2); ctx.closePath(); fs(ctx, '#f1faee', 3);
+      line(ctx, -12, top + 4, 4, top + 70, 4, '#0b1d33'); line(ctx, 28, top + 4, 12, top + 70, 4, '#0b1d33');
+      circle(ctx, 10, top + 82, 4); fs(ctx, '#ffd23f', 0);
+    }
     if (C.tie) {
       ctx.beginPath(); ctx.moveTo(8, top + 4); ctx.lineTo(18, top + 4); ctx.lineTo(22, top + 60); ctx.lineTo(13, top + 72); ctx.lineTo(4, top + 60); ctx.closePath(); fs(ctx, C.tie, 3);
     }
@@ -250,8 +257,10 @@ export function drawChar(ctx, id, o = {}) {
   const hx = 0, hty = hy - R - 22;
   const anchor = [m.a * hx + m.c * hty + m.e, m.b * hx + m.d * hty + m.f];
   const handM = [m.a * frontHand[0] + m.c * frontHand[1] + m.e, m.b * frontHand[0] + m.d * frontHand[1] + m.f];
+  const headC = [m.c * hy + m.e, m.d * hy + m.f];
+  const headR = R * Math.hypot(m.c, m.d);
   ctx.restore();
-  return { head: anchor, hand: handM };
+  return { head: anchor, hand: handM, headC, headR };
 }
 
 export function darken(hex, f = 0.78) {
@@ -365,7 +374,7 @@ function drawHead(ctx, C, o, t, R) {
     ctx.bezierCurveTo(mx - 22, my - 12, mx - 10, my - 8, mx, my - 6);
     ctx.bezierCurveTo(mx + 10, my - 8, mx + 24, my - 12, mx + 32, my - 2);
     ctx.bezierCurveTo(mx + 36, my - 12, mx + 16, my - 26, mx, my - 14);
-    fs(ctx, C.hairC === '#d9d9d9' ? '#e8e8e8' : '#1b1b1b', 3);
+    fs(ctx, C.mustacheC || (C.hairC === '#d9d9d9' ? '#e8e8e8' : '#1b1b1b'), 3);
   }
   if (o.beard > 0) {
     const L = o.beard * 150;
@@ -433,6 +442,15 @@ function drawHair(ctx, C, R, t) {
       ctx.quadraticCurveTo(R * 0.5, -R * 0.75, R * 0.1, -R * 0.62); ctx.quadraticCurveTo(-R * 0.4, -R * 0.62, -R * 0.62, -R * 0.2);
       ctx.lineTo(-R * 0.75, R * 0.25); ctx.closePath(); fs(ctx, hc, 5);
       line(ctx, -R * 0.15, -R * 0.98, R * 0.1, -R * 0.66, 3, 'rgba(255,255,255,0.3)');
+      break;
+    }
+    case 'bob': {
+      ctx.beginPath(); ctx.moveTo(-R * 0.98, R * 0.55);
+      ctx.arc(0, 0, R * 1.04, Math.PI - 0.25, -0.15);
+      ctx.quadraticCurveTo(R * 0.75, -R * 0.55, R * 0.2, -R * 0.7);
+      ctx.quadraticCurveTo(-R * 0.2, -R * 0.45, -R * 0.45, -R * 0.1);
+      ctx.lineTo(-R * 0.55, R * 0.62); ctx.closePath(); fs(ctx, hc, 5);
+      line(ctx, -R * 0.3, -R * 0.85, R * 0.2, -R * 0.75, 3, 'rgba(255,255,255,0.3)');
       break;
     }
     case 'curly': {

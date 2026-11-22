@@ -9,6 +9,7 @@ import plan from './s_plan.mjs';
 import bank from './s_bank.mjs';
 import autochase from './s_auto.mjs';
 import { mummy, hospital, outro } from './s_end.mjs';
+import { fasttravel, costume, news, dadiPost } from './s_extra.mjs';
 
-export const SCENES = [coldOpen, title, loading, beach, cartheft, bikechase, pool, plan, bank, autochase, mummy, hospital, outro];
-SCENES.forEach((s, i) => { s._lines = prepLines(s.lines || [], i + 1); });
+export const SCENES = [coldOpen, title, loading, beach, cartheft, bikechase, pool, fasttravel, plan, costume, bank, news, autochase, mummy, hospital, dadiPost, outro];
+SCENES.forEach((s, i) => { s._lines = prepLines(s.lines || [], i + 1, s.id, s.dur); });

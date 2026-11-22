@@ -18,14 +18,14 @@ export default {
     [34.4, 'whoosh'], [35.4, 'thud'], [36.2, 'whoosh'],
   ],
   lines: [
-    { t: 3.0, who: 'bunty', text: 'Aa gaya main! PALM BAY CITY!', dur: 3.4 },
-    { t: 6.6, who: 'bunty', text: 'Aaj se is sheher ka DON... main hoon!', dur: 3.6 },
-    { t: 11.6, who: 'chintu', text: 'Mmmph! Mmmph!!', dur: 2.2, at: [1250, 700] },
-    { t: 15.5, who: 'chintu', text: 'Bhai... mera toh spawn hi bug ho gaya.', dur: 3.4 },
-    { t: 19.1, who: 'bunty', text: 'Chintu, focus! Open world hai. Kuch bhi kar sakte hain!', dur: 4.0 },
-    { t: 23.2, who: 'chintu', text: 'Kuch bhi? Toh chalo ghar chalte hain. Mummy wait kar rahi hogi.', dur: 4.3 },
-    { t: 27.6, who: 'bunty', text: 'GHAR NAHI!! Pehle MISSION!', style: 'shout', dur: 2.6 },
-    { t: 31.0, who: 'chintu', text: 'Chori?! Bhai, mummy ko pata chala toh...', dur: 3.2 },
+    { t: 3.0, who: 'bunty', text: 'Aa gaya main! PALM BAY CITY!', hi: 'आ गया मैं! पाम बे सिटी!', dur: 3.4 },
+    { t: 6.6, who: 'bunty', text: 'Aaj se is sheher ka DON... main hoon!', hi: 'आज से इस शहर का डॉन... मैं हूँ!', dur: 3.6 },
+    { t: 11.6, who: 'chintu', text: 'Mmmph! Mmmph!!', hi: 'म्म्म! म्म्म्म!!', fx: 'muffle', dur: 2.2, at: [1250, 700] },
+    { t: 15.5, who: 'chintu', text: 'Bhai... mera toh spawn hi bug ho gaya.', hi: 'भाई... मेरा तो स्पॉन ही बग हो गया।', dur: 3.4 },
+    { t: 19.1, who: 'bunty', text: 'Chintu, focus! Open world hai. Kuch bhi kar sakte hain!', hi: 'चिंटू, फोकस! ओपन वर्ल्ड है। कुछ भी कर सकते हैं!', dur: 4.0 },
+    { t: 23.2, who: 'chintu', text: 'Kuch bhi? Toh chalo ghar chalte hain. Mummy wait kar rahi hogi.', hi: 'कुछ भी? तो चलो घर चलते हैं। मम्मी वेट कर रही होगी।', dur: 4.3 },
+    { t: 27.6, who: 'bunty', text: 'GHAR NAHI!! Pehle MISSION!', hi: 'घर नहीं!! पहले मिशन!', style: 'shout', dur: 2.6 },
+    { t: 31.0, who: 'chintu', text: 'Chori?! Bhai, mummy ko pata chala toh...', hi: 'चोरी?! भाई, मम्मी को पता चला तो...', dur: 3.2 },
   ],
   draw(ctx, t, S) {
     const shout = t > 27.6 && t < 30.2;

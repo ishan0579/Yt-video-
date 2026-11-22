@@ -438,10 +438,28 @@ def cue_sad():
     return s.out()
 
 
+def cue_news():
+    s = Seq(104, 4)
+    prog = [('Dm', 0), ('Bb', 0), ('Gm', 0), ('A', 0)]
+    CH = dict(CHORD, Gm=[55, 58, 62])
+    for bar, (ch, _) in enumerate(prog):
+        notes = CH[ch]
+        for k in range(16):
+            s.add(hat(), bar * 4 + k * 0.25, 0.18 if k % 2 else 0.3)
+        s.add(timpani(midi(notes[0] - 24), 1.0), bar * 4, 0.6)
+        s.add(kick(0.3, 0.8), bar * 4 + 2, 0.5)
+        for pos in (0, 0.75, 1.5, 3):
+            s.add(brass([n + 12 for n in notes], 0.25), bar * 4 + pos, 0.35)
+        for k in range(8):
+            s.add(pluck(midi(notes[k % 3] + 24), 0.2, 0.6), bar * 4 + k * 0.5, 0.15)
+        s.add(pad(notes, 4 * s.b, 1400, 0.2), bar * 4, 0.25)
+    return s.out()
+
+
 CUES = {
     'title': cue_title, 'chill': cue_chill, 'sneaky': cue_sneaky, 'chase': cue_chase, 'party': cue_party,
     'bellremix': cue_bellremix, 'epic': cue_epic, 'loading': cue_loading, 'tense': cue_tense, 'sad': cue_sad,
-    'timelapse': lambda: cue_sneaky(168),
+    'timelapse': lambda: cue_sneaky(168), 'news': cue_news,
 }
 _cue_cache = {}
 
@@ -853,6 +871,17 @@ def sfx_snore(d):
     return x
 
 
+def sfx_newsSting():
+    x = np.zeros(N(2.4))
+    place(x, sfx_whoosh(0.5), 0, 0.6)
+    place(x, brass([50, 57, 62], 0.18), 0.35, 0.7)
+    place(x, brass([53, 60, 65], 0.18), 0.6, 0.7)
+    place(x, brass([55, 62, 67, 74], 1.4), 0.85, 0.9)
+    place(x, timpani(55, 1.2), 0.85, 0.9)
+    place(x, hp(noise(1.2), 5000) * expenv(1.2, 0.4), 0.85, 0.35)
+    return x
+
+
 SFX = {
     'whoosh': sfx_whoosh, 'boom': sfx_boom, 'sparkle': sfx_sparkle, 'pop': sfx_pop, 'boing': sfx_boing, 'thud': sfx_thud,
     'fall': sfx_fall, 'spawn': sfx_spawn, 'mission': sfx_mission, 'fail': sfx_fail, 'explosion': sfx_explosion,
@@ -861,7 +890,7 @@ SFX = {
     'mega': sfx_mega, 'twinkle': sfx_twinkle, 'splash': sfx_splash, 'spit': sfx_spit, 'click': sfx_click, 'dun': sfx_dun,
     'marker': sfx_marker, 'tada': sfx_tada, 'snap': sfx_snap, 'bonk': sfx_bonk, 'glass': sfx_glass, 'bang': sfx_bang,
     'yawn': sfx_yawn, 'print': sfx_print, 'stamp': sfx_stamp, 'kaching': sfx_kaching, 'gulp': sfx_gulp, 'lockon': sfx_lockon,
-    'thwack': sfx_thwack,
+    'thwack': sfx_thwack, 'newsSting': sfx_newsSting,
 }
 # effects with a duration argument
 SFX_D = {
@@ -973,7 +1002,22 @@ def main():
         place(sfx, x, e['t'], e.get('vol', 1.0) * SFX_GAIN.get(name, 0.85) * 0.6)
 
     act = np.zeros(n)
+    import os
+    import soundfile as sf
+    base = os.path.dirname(os.path.abspath(sys.argv[1]))
+    vjson = os.path.join(base, 'voices.json')
+    voices = json.load(open(vjson)) if os.path.exists(vjson) else {}
+    VOFF = 0.1
     for line in tl['lines']:
+        v = voices.get(line.get('id'))
+        if v:
+            y, sr = sf.read(os.path.join(base, v['file']))
+            if sr != SR:
+                y = signal.resample_poly(y, SR, sr)
+            place(voice, y, line['t'] + VOFF, 1.0)
+            a, b = int((line['t'] + VOFF) * SR), int((line['t'] + VOFF + len(y) / SR + 0.15) * SR)
+            act[max(0, a):min(n, b)] = 1.0
+            continue
         if not line['syl']:
             continue
         y = render_line(line)
@@ -983,14 +1027,15 @@ def main():
     # ducking envelope for music under dialogue
     duck = lp(act, 3, 1)
     duck = np.clip(duck, 0, 1)
-    music_d = music * (1 - 0.4 * duck)
+    music_d = music * (1 - 0.55 * duck)
+    sfx_d = sfx * (1 - 0.25 * duck)
 
     def master(x):
         x = hp(x, 30)
         x = x / (np.sqrt(np.mean(x ** 2)) + 1e-9) * 0.13
         return np.tanh(x * 1.6) / 1.6 * 1.05
 
-    write_wav(out + 'audio.wav', master(music_d + sfx + voice))
+    write_wav(out + 'audio.wav', master(music_d + sfx_d + voice * 1.25))
     write_wav(out + 'audio_novoice.wav', master(music + sfx))
     print('audio written', total, 's')
 
