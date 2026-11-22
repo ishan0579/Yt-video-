@@ -1,0 +1,21 @@
+import { makeCanvas, W, H, txt } from '../src/engine.mjs';
+import { drawChar, guest } from '../src/characters.mjs';
+import fs from 'fs';
+const [c, ctx] = makeCanvas();
+ctx.fillStyle = '#9ad7ff'; ctx.fillRect(0, 0, W, H);
+ctx.fillStyle = '#e9c98f'; ctx.fillRect(0, 760, W, 320);
+const ids = ['bunty','chintu','dadi','police','mummy','lala','cashier','nurse'];
+ids.forEach((id, i) => {
+  const x = 140 + i * 230;
+  drawChar(ctx, id, { x, y: 480, s: 1.0, t: 1, expr: ['smug','scared','angry','normal','angry','happy','bored','normal'][i], mouth: i%3===0?0.6:0, arms: ['point','flail','smack','wave','throw','cheer','idle','idle'][i] });
+  txt(ctx, id, x, 520, { size: 30 });
+});
+drawChar(ctx, 'bunty', { x: 150, y: 1000, s: 1, walk: 1.0, t: 1 });
+drawChar(ctx, 'chintu', { x: 380, y: 1000, s: 1, legs:'run', walk: 2.0, t: 1, expr:'shock' });
+drawChar(ctx, 'bunty', { x: 620, y: 1000, s: 1, legs:'sit', t: 1, arms:'hold', mask:'bandit' });
+drawChar(ctx, 'chintu', { x: 860, y: 1000, s: 1, t: 1, mask:'bag' });
+drawChar(ctx, 'bunty', { x: 1100, y: 1000, s: 1, t: 1, beard: 0.6, expr:'bored', arms:'facepalm' });
+drawChar(ctx, 'chintu', { x: 1340, y: 1000, s: 1, t: 1, bandage: true, expr:'sad', face:-1 });
+drawChar(ctx, 'bunty', { x: 1580, y: 1000, s: 1, legs:'pedal', pedal: 1, t: 1, arms:'hold', expr:'dead' });
+drawChar(ctx, guest(3), { x: 1800, y: 1000, s: 1, t: 1, arms:'dance' });
+fs.writeFileSync('tests/sheet.png', await c.encode('png'));
