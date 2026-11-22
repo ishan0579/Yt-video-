@@ -47,3 +47,20 @@ bank robbery funny, police chase cartoon, mummy ki chappal, indian animation, gt
 - Voice credit (optional): "Hindi voices: Sarvam AI". Check Sarvam's current commercial-use terms in your account before monetizing.
 - Made for kids: **No** (slapstick comedy for a general audience; your call).
 - Over 8 minutes, so you can turn on mid-roll ads if your channel is monetized.
+
+## Shorts (test clips)
+Files: `output/shorts/` (1080x1920, built with `./build_shorts.sh`). Each ends with a "Pura episode dekho" card.
+
+| File | Length | Title to paste |
+|---|---|---|
+| short1_banana_robbery.mp4 | 0:49 | Agar GTA 6 Desi Hota 😂 Banana Se Bank Robbery! #shorts |
+| short2_mummy_final_boss.mp4 | 0:35 | GTA 6 Ka Final Boss = Mummy Ki Chappal 😂 #shorts |
+| short3_cycle_supercar.mp4 | 0:48 | Agar GTA 6 Desi Hota: Cycle Hi Supercar Hai 😂🚲 #shorts |
+
+Description for all three: `Pura 10 minute ka episode channel pe hai! 😂 #shorts #gta6 #animation #desicomedy #hindicartoon`
+
+**How to read the test (YouTube Studio → Analytics → each Short):**
+- **"Viewed vs. swiped away":** the key Shorts number. Above ~70% viewed means the hook works for your audience.
+- **Average % viewed:** above 80% (or over 100% from loops) is great.
+- **Subscribers gained** and clicks to the full episode tell you whether animated content can grow the channel.
+- Post one Short per day at the time your GTA 6 clips usually do best, and give each one 48–72 hours before judging.

@@ -44,6 +44,10 @@ music and sound effects) is generated from code. The Hindi voice-over uses natur
   `SARVAM_API_KEY`. Offline fallback: `TTS=kokoro ./build.sh` uses the open-source Kokoro-82M model (more robotic).
 - Mouths are animated from the real audio envelope.
 
+## Shorts
+`./build_shorts.sh` cuts 3 vertical Shorts (1080x1920) from the episode: hook title on top, a camera crop that follows
+the speaker, big captions, and an end card pointing to the full episode. Edit the clips in `src/shorts.mjs` (`SHORTS`).
+
 ## Rebuild / edit
 Requirements: Node 18+, Python 3.10+, ffmpeg.
 ```bash
