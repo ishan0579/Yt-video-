@@ -8,8 +8,9 @@ samples, so it is safe to upload.
 ## Output
 | File | What it is |
 |---|---|
-| `output/bunty_chintu_ep1.mp4` | Final video, 1920x1080, 30 fps, about 8:02, with music, SFX and cartoon "babble" voices |
-| `output/bunty_chintu_ep1_no_voices.mp4` | Same video with music + SFX only, for dubbing with your own voice |
+| `output/bunty_chintu_ep1_compact.mp4` | Final video (1080p, 30 fps, 8:02) compressed to under 100 MB so it fits on GitHub |
+| `output/bunty_chintu_ep1.mp4` *(not in git, 184 MB)* | Full-quality master with music, SFX and cartoon "babble" voices; upload this one to YouTube. Rebuild with `./build.sh` |
+| `output/bunty_chintu_ep1_no_voices.mp4` *(not in git)* | Same video with music + SFX only, for dubbing with your own voice. Built by `./build.sh` |
 | `output/bunty_chintu_ep1.srt` | Subtitles (speaker: line) |
 | `output/thumbnail.jpg` | 1280x720 YouTube thumbnail |
 | `SCRIPT.md` | Full dialogue with timestamps (for voice-over) |
