@@ -11,11 +11,13 @@ TITLES = {'coldopen': 'Cold open (freeze frame)', 'title': 'Title', 'loading': '
           'dadipost': 'Dadi ka comeback (post-credits)'}
 fmt = lambda x: f"{int(x // 60)}:{x % 60:05.2f}"
 out = ['# Bunty & Chintu: Episode 1 script', '',
-       'The final video uses this Hindi voice-over (Kokoro TTS). To re-dub with your own voice, use',
-       '`output/bunty_chintu_ep1_no_voices.mp4` (music + sound effects only) and record each line at its timestamp.', '',
-       '**Voice cast (Kokoro-82M Hindi voices, Apache-2.0):** Bunty = hm_omega · Chintu = hm_psi +2.5 semitones ·',
-       'Police Uncle = hm_omega -3 · Lala Ji = hm_psi -4 · Cashier = hm_psi -1.5 (slow) · Bhola Uncle = hm_omega +1.5 ·',
-       'Dadi = hf_beta +1.5 with vibrato · Mummy = hf_alpha · News Anchor = hf_beta', '']
+       'The final video uses this Hindi voice-over, generated with Sarvam AI Bulbul v4-flash natural voices and checked',
+       'line by line with speech-to-text. To re-dub with your own voice, use `output/bunty_chintu_ep1_no_voices.mp4`',
+       '(music + sound effects only) and record each line at its timestamp.', '',
+       '**Voice cast (Sarvam Bulbul v4-flash):** Bunty = rehan_hi_social · Chintu = advait_hi_character ·',
+       'Police Uncle = mahesh_hi_documentary · Lala Ji = mukul_hi_suspense · Cashier = rahul_hi_conversational ·',
+       'Bhola Uncle = ashok_hi_character · Dadi = roopa_hi_narration · Mummy = sarika_hi_conversation ·',
+       'News Anchor = simran_hi_news_breaking', '']
 for sc in tl['scenes']:
     out.append(f"## {fmt(sc['start'])}: {TITLES.get(sc['id'], sc['id'])}")
     out.append('')

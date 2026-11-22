@@ -155,7 +155,7 @@ export default {
     { t: 37.6, who: 'cashier', text: 'Aadhaar card dikhaiye.', hi: 'आधार कार्ड दिखाइए।', dur: 2.6 },
     { t: 41.6, who: 'cashier', text: 'Ye lijiye. Pachaas rupaye.', hi: 'ये लीजिए। पचास रुपये।', dur: 2.8 },
     { t: 44.6, who: 'bunty', text: 'Yesss! DAKAITI SUCCESSFUL!', hi: 'येस! डकैती सक्सेसफ़ुल!', dur: 2.2 },
-    { t: 46.8, who: 'chintu', text: 'Bhai... ye toh tere hi account ka paisa tha.', hi: 'भाई... ये तो तेरे ही अकाउंट का पैसा था।', dur: 3.4 },
+    { t: 47.0, who: 'chintu', text: 'Bhai... ye toh tere hi account ka paisa tha.', hi: 'भाई... ये तो तेरे ही अकाउंट का पैसा था।', dur: 3.4 },
     { t: 52.6, who: 'cashier', text: 'Banana se dakaiti? Alarm toh banta hai.', hi: 'बनाना से डकैती? अलार्म तो बनता है।', dur: 3.0 },
     { t: 55.6, who: 'bunty', text: 'BHAAAAGOOOO!!!', hi: 'भागो!!!', style: 'shout', dur: 2.0 },
   ],

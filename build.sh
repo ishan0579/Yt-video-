@@ -7,7 +7,8 @@ for f in kokoro-v1.0.onnx voices-v1.0.bin; do
   [ -f "assets/tts/$f" ] || curl -sSL --retry 3 -o "assets/tts/$f" "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/$f"
 done
 node src/timeline.mjs
-python3 audio/voices.py build/timeline.json build/      # Hindi voice-over (Kokoro TTS)
+python3 audio/voices.py build/timeline.json build/      # Hindi voice-over (Sarvam Bulbul v4; TTS=kokoro for offline)
+python3 audio/verify_voices.py build/timeline.json build/  # speech-to-text check, re-takes garbled lines
 node src/timeline.mjs                                   # re-export with real voice timings
 python3 audio/synth.py build/timeline.json build/
 python3 audio/make_script.py

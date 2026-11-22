@@ -1,11 +1,13 @@
 # Bunty & Chintu: Episode 1 script
 
-The final video uses this Hindi voice-over (Kokoro TTS). To re-dub with your own voice, use
-`output/bunty_chintu_ep1_no_voices.mp4` (music + sound effects only) and record each line at its timestamp.
+The final video uses this Hindi voice-over, generated with Sarvam AI Bulbul v4-flash natural voices and checked
+line by line with speech-to-text. To re-dub with your own voice, use `output/bunty_chintu_ep1_no_voices.mp4`
+(music + sound effects only) and record each line at its timestamp.
 
-**Voice cast (Kokoro-82M Hindi voices, Apache-2.0):** Bunty = hm_omega · Chintu = hm_psi +2.5 semitones ·
-Police Uncle = hm_omega -3 · Lala Ji = hm_psi -4 · Cashier = hm_psi -1.5 (slow) · Bhola Uncle = hm_omega +1.5 ·
-Dadi = hf_beta +1.5 with vibrato · Mummy = hf_alpha · News Anchor = hf_beta
+**Voice cast (Sarvam Bulbul v4-flash):** Bunty = rehan_hi_social · Chintu = advait_hi_character ·
+Police Uncle = mahesh_hi_documentary · Lala Ji = mukul_hi_suspense · Cashier = rahul_hi_conversational ·
+Bhola Uncle = ashok_hi_character · Dadi = roopa_hi_narration · Mummy = sarika_hi_conversation ·
+News Anchor = simran_hi_news_breaking
 
 ## 0:00.00: Cold open (freeze frame)
 
@@ -33,7 +35,7 @@ Dadi = hf_beta +1.5 with vibrato · Mummy = hf_alpha · News Anchor = hf_beta
 | 0:42.60 | CHINTU | म्म्म! म्म्म्म!! | Mmmph! Mmmph!! |
 | 0:46.50 | CHINTU | भाई... मेरा तो स्पॉन ही बग हो गया। | Bhai... mera toh spawn hi bug ho gaya. |
 | 0:50.10 | BUNTY | चिंटू, फोकस! ओपन वर्ल्ड है। कुछ भी कर सकते हैं! | Chintu, focus! Open world hai. Kuch bhi kar sakte hain! |
-| 0:54.20 | CHINTU | कुछ भी? तो चलो घर चलते हैं। मम्मी वेट कर रही होगी। | Kuch bhi? Toh chalo ghar chalte hain. Mummy wait kar rahi hogi. |
+| 0:54.35 | CHINTU | कुछ भी? तो चलो घर चलते हैं। मम्मी वेट कर रही होगी। | Kuch bhi? Toh chalo ghar chalte hain. Mummy wait kar rahi hogi. |
 | 0:58.60 | BUNTY | घर नहीं!! पहले मिशन! | GHAR NAHI!! Pehle MISSION! *(shouting)* |
 | 1:02.00 | CHINTU | चोरी?! भाई, मम्मी को पता चला तो... | Chori?! Bhai, mummy ko pata chala toh... |
 
@@ -76,8 +78,8 @@ Dadi = hf_beta +1.5 with vibrato · Mummy = hf_alpha · News Anchor = hf_beta
 | 3:02.90 | BUNTY | ...हाँ! हम ही डीजे हैं! | ...Haan! HUM hi DJ hain! |
 | 3:10.50 | CHINTU | भाई ये तो हिट हो गया! | Bhai ye toh HIT ho gaya! *(shouting)* |
 | 3:13.90 | BUNTY | टैलेंट छुपता नहीं, चिंटू! | Talent chhupta nahi, Chintu! |
-| 3:17.90 | LALA JI | वाह! तुम लोग काम के आदमी हो। मेरे लिए एक छोटा सा काम करोगे? | Wah! Tum log kaam ke aadmi ho. Mere liye ek chhota sa kaam karoge? |
-| 3:22.40 | BUNTY | हाँ हाँ! बोलो! | Haan haan! Bolo! |
+| 3:17.40 | LALA JI | वाह! तुम लोग काम के आदमी हो। एक छोटा सा काम करोगे? | Wah! Tum log kaam ke aadmi ho. Ek chhota sa kaam karoge? |
+| 3:22.50 | BUNTY | हाँ हाँ! बोलो! | Haan haan! Bolo! |
 | 3:24.50 | LALA JI | बैंक... लूटना है। | Bank... lootna hai. |
 | 3:27.80 | BUNTY | हाँ! | HAAN! *(shouting)* |
 | 3:29.20 | CHINTU | नहीं! | NAHI! *(shouting)* |
@@ -113,13 +115,13 @@ Dadi = hf_beta +1.5 with vibrato · Mummy = hf_alpha · News Anchor = hf_beta
 
 | Time | Character | Hindi (voice) | Hinglish (bubble) |
 |---|---|---|---|
-| 4:47.70 | BHOLA UNCLE | आइए आइए! भोला कॉस्ट्यूम सेंटर में स्वागत है! | Aaiye aaiye! Bhola Costume Centre mein swagat hai! |
+| 4:46.90 | BHOLA UNCLE | आइए आइए! स्वागत है, स्वागत है! | Aaiye aaiye! Swagat hai, swagat hai! |
 | 4:51.50 | BUNTY | अंकल, बैंक लूटने के लिए कोई डिस्गाइज़ दिखाओ। | Uncle, bank lootne ke liye koi disguise dikhao. |
-| 4:55.30 | BHOLA UNCLE | बिल्कुल! एक से बढ़कर एक! | Bilkul! Ek se badhkar ek! |
+| 4:55.10 | BHOLA UNCLE | बिल्कुल! एक से बढ़कर एक! | Bilkul! Ek se badhkar ek! |
 | 4:58.40 | CHINTU | भाई, ये तो वेस्टर्न फ़िल्म है। | Bhai, ye toh Western film hai. |
 | 5:01.70 | BUNTY | मैं हूँ... कैप्टन बंटी! | Main hoon... CAPTAIN BUNTY! |
 | 5:05.10 | CHINTU | भाई, ये डकैती है, शादी नहीं! | Bhai, ye dakaiti hai, shaadi nahi! |
-| 5:08.50 | BHOLA UNCLE | ये वाला अस्सी का डिस्को स्पेशल है। | Ye wala 80s disco special hai. |
+| 5:08.50 | BHOLA UNCLE | ये अस्सी का डिस्को स्पेशल है! | Ye 80s ka disco special hai! |
 | 5:11.90 | BUNTY | परफ़ेक्ट! एकदम प्रोफ़ेशनल डकैत। | Perfect! Ekdum professional dakait. |
 | 5:15.10 | BHOLA UNCLE | टोटल हुए... पाँच सौ रुपये। | Total huye... paanch sau rupaye. |
 | 5:18.30 | BUNTY | अंकल... उधार चलेगा? | Uncle... udhaar chalega? |
@@ -138,7 +140,7 @@ Dadi = hf_beta +1.5 with vibrato · Mummy = hf_alpha · News Anchor = hf_beta
 | 6:09.10 | CASHIER | आधार कार्ड दिखाइए। | Aadhaar card dikhaiye. |
 | 6:13.10 | CASHIER | ये लीजिए। पचास रुपये। | Ye lijiye. Pachaas rupaye. |
 | 6:16.10 | BUNTY | येस! डकैती सक्सेसफ़ुल! | Yesss! DAKAITI SUCCESSFUL! |
-| 6:18.30 | CHINTU | भाई... ये तो तेरे ही अकाउंट का पैसा था। | Bhai... ye toh tere hi account ka paisa tha. |
+| 6:18.50 | CHINTU | भाई... ये तो तेरे ही अकाउंट का पैसा था। | Bhai... ye toh tere hi account ka paisa tha. |
 | 6:24.10 | CASHIER | बनाना से डकैती? अलार्म तो बनता है। | Banana se dakaiti? Alarm toh banta hai. |
 | 6:27.10 | BUNTY | भागो!!! | BHAAAAGOOOO!!! *(shouting)* |
 

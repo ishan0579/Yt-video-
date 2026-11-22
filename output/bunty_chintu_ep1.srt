@@ -3,11 +3,11 @@
 Chintu: BHAAAAI!!
 
 2
-00:00:05,100 --> 00:00:09,611
+00:00:05,100 --> 00:00:09,682
 Bunty: Haan bhai, ye main hoon. Soch rahe hoge... yahan tak pahuncha kaise?
 
 3
-00:00:28,200 --> 00:00:30,073
+00:00:28,200 --> 00:00:30,584
 Chintu: Hatt! Chal na yaar!
 
 4
@@ -19,7 +19,7 @@ Bunty: Aa gaya main! PALM BAY CITY!
 Bunty: Aaj se is sheher ka DON... main hoon!
 
 6
-00:00:42,600 --> 00:00:44,800
+00:00:42,600 --> 00:00:44,827
 Chintu: Mmmph! Mmmph!!
 
 7
@@ -27,11 +27,11 @@ Chintu: Mmmph! Mmmph!!
 Chintu: Bhai... mera toh spawn hi bug ho gaya.
 
 8
-00:00:50,100 --> 00:00:54,100
+00:00:50,100 --> 00:00:54,460
 Bunty: Chintu, focus! Open world hai. Kuch bhi kar sakte hain!
 
 9
-00:00:54,200 --> 00:00:58,526
+00:00:54,350 --> 00:00:58,791
 Chintu: Kuch bhi? Toh chalo ghar chalte hain. Mummy wait kar rahi hogi.
 
 10
@@ -39,7 +39,7 @@ Chintu: Kuch bhi? Toh chalo ghar chalte hain. Mummy wait kar rahi hogi.
 Bunty: GHAR NAHI!! Pehle MISSION!
 
 11
-00:01:02,000 --> 00:01:05,200
+00:01:02,000 --> 00:01:05,701
 Chintu: Chori?! Bhai, mummy ko pata chala toh...
 
 12
@@ -55,11 +55,11 @@ Chintu: Theek hai bhai, main lookout pe hoon!
 Dadi: AE! Meri gaadi ko haath lagaya?!
 
 15
-00:01:26,200 --> 00:01:30,227
+00:01:26,200 --> 00:01:30,000
 Bunty: D-Dadi ji... main toh bas iski dhool saaf kar raha tha!
 
 16
-00:01:36,000 --> 00:01:39,430
+00:01:36,000 --> 00:01:39,400
 Chintu: Bhai... Dadi ne humse better gaadi chalayi.
 
 17
@@ -107,7 +107,7 @@ Police Uncle: Ruk ja! Abhi batata hoon!
 Chintu: Bhai jaldi pedal maar!!
 
 28
-00:02:33,400 --> 00:02:37,400
+00:02:33,400 --> 00:02:37,624
 Bunty: Mere pair ab pair nahi rahe... PANKHE ban gaye hain!
 
 29
@@ -123,7 +123,7 @@ Bunty: Pakad ke baith, Chintu!
 Chintu: BHAAAAI HUM UD RAHE HAIN!!
 
 32
-00:02:47,700 --> 00:02:50,700
+00:02:47,700 --> 00:02:50,920
 Police Uncle: Arre... ye toh ud gaye!
 
 33
@@ -143,11 +143,11 @@ Chintu: Bhai ye toh HIT ho gaya!
 Bunty: Talent chhupta nahi, Chintu!
 
 37
-00:03:17,900 --> 00:03:22,559
-Lala Ji: Wah! Tum log kaam ke aadmi ho. Mere liye ek chhota sa kaam karoge?
+00:03:17,400 --> 00:03:22,300
+Lala Ji: Wah! Tum log kaam ke aadmi ho. Ek chhota sa kaam karoge?
 
 38
-00:03:22,400 --> 00:03:24,400
+00:03:22,500 --> 00:03:24,500
 Bunty: Haan haan! Bolo!
 
 39
@@ -155,15 +155,15 @@ Bunty: Haan haan! Bolo!
 Lala Ji: Bank... lootna hai.
 
 40
-00:03:27,800 --> 00:03:29,262
+00:03:27,800 --> 00:03:29,100
 Bunty: HAAN!
 
 41
-00:03:29,200 --> 00:03:30,454
+00:03:29,200 --> 00:03:30,423
 Chintu: NAHI!
 
 42
-00:03:30,500 --> 00:03:31,962
+00:03:30,500 --> 00:03:31,800
 Bunty: HAAN!!
 
 43
@@ -175,7 +175,7 @@ Chintu: ...haan.
 Bunty: Garage door hai. Fast travel karte hain!
 
 45
-00:03:46,100 --> 00:03:49,957
+00:03:46,100 --> 00:03:49,700
 Chintu: Bhai, fast travel ka loading screen yaad hai na?
 
 46
@@ -183,11 +183,11 @@ Chintu: Bhai, fast travel ka loading screen yaad hai na?
 Bunty: Is baar jaldi hoga. Trust me!
 
 47
-00:03:58,800 --> 00:04:01,611
+00:03:58,800 --> 00:04:01,463
 Chintu: Phir se 99 pe atak gaya!
 
 48
-00:04:01,800 --> 00:04:04,031
+00:04:01,800 --> 00:04:04,000
 Bunty: Dekha? Ekdum fast!
 
 49
@@ -195,7 +195,7 @@ Bunty: Dekha? Ekdum fast!
 Chintu: ...haan bhai. Bilkul.
 
 50
-00:04:09,500 --> 00:04:12,600
+00:04:09,500 --> 00:04:12,832
 Bunty: Toh suno. Ye hai mera MASTER PLAN.
 
 51
@@ -219,11 +219,11 @@ Chintu: Bhai... Step 3 kya hai?
 Bunty: Wo... surprise hai.
 
 56
-00:04:27,900 --> 00:04:31,223
+00:04:27,900 --> 00:04:31,356
 Chintu: Aur agar pakde gaye toh? Escape plan kya hai?
 
 57
-00:04:31,300 --> 00:04:35,029
+00:04:31,300 --> 00:04:35,053
 Bunty: Escape plan ye hai ki... hum pakde hi NAHI jaayenge.
 
 58
@@ -231,19 +231,19 @@ Bunty: Escape plan ye hai ki... hum pakde hi NAHI jaayenge.
 Chintu: ...plan toh solid hai bhai.
 
 59
-00:04:47,700 --> 00:04:51,740
-bhola: Aaiye aaiye! Bhola Costume Centre mein swagat hai!
+00:04:46,900 --> 00:04:50,567
+bhola: Aaiye aaiye! Swagat hai, swagat hai!
 
 60
-00:04:51,500 --> 00:04:55,378
+00:04:51,500 --> 00:04:55,216
 Bunty: Uncle, bank lootne ke liye koi disguise dikhao.
 
 61
-00:04:55,300 --> 00:04:58,069
+00:04:55,100 --> 00:04:58,689
 bhola: Bilkul! Ek se badhkar ek!
 
 62
-00:04:58,400 --> 00:05:01,100
+00:04:58,400 --> 00:05:01,245
 Chintu: Bhai, ye toh Western film hai.
 
 63
@@ -251,15 +251,15 @@ Chintu: Bhai, ye toh Western film hai.
 Bunty: Main hoon... CAPTAIN BUNTY!
 
 64
-00:05:05,100 --> 00:05:07,900
+00:05:05,100 --> 00:05:08,695
 Chintu: Bhai, ye dakaiti hai, shaadi nahi!
 
 65
-00:05:08,500 --> 00:05:11,674
-bhola: Ye wala 80s disco special hai.
+00:05:08,500 --> 00:05:12,198
+bhola: Ye 80s ka disco special hai!
 
 66
-00:05:11,900 --> 00:05:14,946
+00:05:11,900 --> 00:05:14,900
 Bunty: Perfect! Ekdum professional dakait.
 
 67
@@ -271,7 +271,7 @@ bhola: Total huye... paanch sau rupaye.
 Bunty: Uncle... udhaar chalega?
 
 69
-00:05:21,100 --> 00:05:26,123
+00:05:21,100 --> 00:05:26,383
 bhola: Mask udhaar pe le jao. Aur tumhare dost ke liye... ye free wala.
 
 70
@@ -283,15 +283,15 @@ Chintu: Bhai... kuch dikh nahi raha.
 Bunty: KOI HILEGA NAHI! Ye DAKAITI hai!
 
 72
-00:05:42,100 --> 00:05:45,305
+00:05:42,100 --> 00:05:45,100
 Cashier: Line mein aaiye. Pehle token lijiye.
 
 73
-00:05:50,100 --> 00:05:52,500
+00:05:50,100 --> 00:05:52,721
 Chintu: Bhai... 999?!
 
 74
-00:05:52,500 --> 00:05:55,119
+00:05:52,500 --> 00:05:55,100
 Bunty: ...Koi baat nahi. Wait karte hain.
 
 75
@@ -307,15 +307,15 @@ Cashier: Aadhaar card dikhaiye.
 Cashier: Ye lijiye. Pachaas rupaye.
 
 78
-00:06:16,100 --> 00:06:18,463
+00:06:16,100 --> 00:06:18,784
 Bunty: Yesss! DAKAITI SUCCESSFUL!
 
 79
-00:06:18,300 --> 00:06:21,700
+00:06:18,500 --> 00:06:21,900
 Chintu: Bhai... ye toh tere hi account ka paisa tha.
 
 80
-00:06:24,100 --> 00:06:27,390
+00:06:24,100 --> 00:06:27,239
 Cashier: Banana se dakaiti? Alarm toh banta hai.
 
 81
@@ -323,7 +323,7 @@ Cashier: Banana se dakaiti? Alarm toh banta hai.
 Bunty: BHAAAAGOOOO!!!
 
 82
-00:06:33,500 --> 00:06:36,900
+00:06:33,500 --> 00:06:37,033
 anchor: Namaskar! Aap dekh rahe hain Palm Bay News.
 
 83
@@ -335,7 +335,7 @@ anchor: Aaj shehar ke bank mein ek ajeeb dakaiti hui.
 anchor: Dakait ke paas hathiyaar tha... ek kela.
 
 85
-00:06:44,700 --> 00:06:50,007
+00:06:44,700 --> 00:06:50,191
 anchor: Unhone line mein lagkar, token lekar, apne hi account se pachaas rupaye loote.
 
 86
@@ -343,11 +343,11 @@ anchor: Unhone line mein lagkar, token lekar, apne hi account se pachaas rupaye 
 Police Uncle: Hum unhe zaroor pakdenge. Bas pehle... chai pee lein.
 
 87
-00:06:54,400 --> 00:06:57,140
+00:06:54,400 --> 00:06:57,100
 Police Uncle: Aur haan... helmet zaroor pehnna!
 
 88
-00:06:57,400 --> 00:07:02,800
+00:06:57,400 --> 00:07:02,910
 anchor: Khabar likhe jaane tak, dakait ek auto mein faraar hain. Bane rahiye hamare saath!
 
 89
@@ -355,7 +355,7 @@ anchor: Khabar likhe jaane tak, dakait ek auto mein faraar hain. Bane rahiye ham
 Chintu: Bhai, tu auto chalana jaanta hai?!
 
 90
-00:07:10,700 --> 00:07:13,424
+00:07:10,700 --> 00:07:14,532
 Bunty: Nahi! Par aaj seekh jaaunga!
 
 91
@@ -415,15 +415,15 @@ Chintu: M-Mummy... main toh tuition gaya tha!
 Mummy: Tuition? AUTO mein? POLICE ke saath?!
 
 105
-00:08:07,800 --> 00:08:11,048
+00:08:07,800 --> 00:08:10,830
 Police Uncle: Madam, ye dono bahut bade criminal—
 
 106
-00:08:11,100 --> 00:08:14,317
+00:08:11,100 --> 00:08:14,450
 Police Uncle: ...hum toh bas jaa rahe the. Namaste ji!
 
 107
-00:08:14,700 --> 00:08:17,383
+00:08:14,700 --> 00:08:17,100
 Bunty: Aunty ji, hum samjha sakte hain...
 
 108
@@ -435,7 +435,7 @@ Bunty: ...ye chappal heat-seeking thi kya?
 Chintu: Bhai... toh humne aaj kamaya kya?
 
 110
-00:08:42,500 --> 00:08:45,900
+00:08:42,500 --> 00:08:46,037
 Bunty: Experience, Chintu. EXPERIENCE.
 
 111

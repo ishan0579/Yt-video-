@@ -153,13 +153,13 @@ export const costume = {
   music: [[0, 12.2, 'chill', 0.4], [12.2, 29.4, 'party', 0.32], [29.4, 46, 'sneaky', 0.3]],
   sfx: [[0.6, 'ding'], [12.4, 'whoosh'], [15.8, 'whoosh'], [19.2, 'whoosh'], [22.6, 'whoosh'], [26.0, 'whoosh'], [26.3, 'tada'], [30.0, 'kaching'], [33.2, 'crickets', { dur: 2 }], [37.5, 'snap'], [38.2, 'snap'], [40.0, 'pop']],
   lines: [
-    { t: 2.2, who: 'bhola', text: 'Aaiye aaiye! Bhola Costume Centre mein swagat hai!', hi: 'आइए आइए! भोला कॉस्ट्यूम सेंटर में स्वागत है!', dur: 3.6 },
+    { t: 1.4, who: 'bhola', text: 'Aaiye aaiye! Swagat hai, swagat hai!', hi: 'आइए आइए! स्वागत है, स्वागत है!', dur: 3.2 },
     { t: 6.0, who: 'bunty', text: 'Uncle, bank lootne ke liye koi disguise dikhao.', hi: 'अंकल, बैंक लूटने के लिए कोई डिस्गाइज़ दिखाओ।', dur: 3.6 },
-    { t: 9.8, who: 'bhola', text: 'Bilkul! Ek se badhkar ek!', hi: 'बिल्कुल! एक से बढ़कर एक!', dur: 2.4 },
+    { t: 9.6, who: 'bhola', text: 'Bilkul! Ek se badhkar ek!', hi: 'बिल्कुल! एक से बढ़कर एक!', dur: 2.4 },
     { t: 12.9, who: 'chintu', text: 'Bhai, ye toh Western film hai.', hi: 'भाई, ये तो वेस्टर्न फ़िल्म है।', dur: 2.7 },
     { t: 16.2, who: 'bunty', text: 'Main hoon... CAPTAIN BUNTY!', hi: 'मैं हूँ... कैप्टन बंटी!', dur: 2.8 },
     { t: 19.6, who: 'chintu', text: 'Bhai, ye dakaiti hai, shaadi nahi!', hi: 'भाई, ये डकैती है, शादी नहीं!', dur: 2.8 },
-    { t: 23.0, who: 'bhola', text: 'Ye wala 80s disco special hai.', hi: 'ये वाला अस्सी का डिस्को स्पेशल है।', dur: 2.8 },
+    { t: 23.0, who: 'bhola', text: 'Ye 80s ka disco special hai!', hi: 'ये अस्सी का डिस्को स्पेशल है!', dur: 2.8 },
     { t: 26.4, who: 'bunty', text: 'Perfect! Ekdum professional dakait.', hi: 'परफ़ेक्ट! एकदम प्रोफ़ेशनल डकैत।', dur: 3.0 },
     { t: 29.6, who: 'bhola', text: 'Total huye... paanch sau rupaye.', hi: 'टोटल हुए... पाँच सौ रुपये।', dur: 3.0 },
     { t: 32.8, who: 'bunty', text: 'Uncle... udhaar chalega?', hi: 'अंकल... उधार चलेगा?', dur: 2.6 },
@@ -170,7 +170,7 @@ export const costume = {
     shop(ctx, t);
     const outfit = outfitAt(t);
     // Bhola behind the counter
-    const bArms = t > 37.2 && t < 38.6 ? 'hold' : (t > 2.2 && t < 5.8 ? 'wave' : (t > 29.6 && t < 32.6 ? 'point' : (t > 38.6 && t < 40.2 ? 'grab' : 'idle')));
+    const bArms = t > 37.2 && t < 38.6 ? 'hold' : (t > 1.4 && t < 5.8 ? 'wave' : (t > 29.6 && t < 32.6 ? 'point' : (t > 38.6 && t < 40.2 ? 'grab' : 'idle')));
     S.c(ctx, 'bhola', { x: 360, y: 850, s: 1.2, arms: bArms, expr: t > 32.8 && t < 35.6 ? 'bored' : 'laugh', legs: 'hidden', prop: t > 37.2 && t < 38.6 ? c => scissors(c, 0, -10, 0.8, Math.abs(Math.sin(t * 12)) * 0.4) : null });
     rr(ctx, 130, 680, 480, 220, 10); fs(ctx, '#6d4c41', 6); rr(ctx, 110, 660, 520, 34, 8); fs(ctx, '#8d6e63', 5);
     txt(ctx, 'CASH', 370, 790, { size: 40, font: 'Bangers', fill: '#ffd23f', lw: 0 });

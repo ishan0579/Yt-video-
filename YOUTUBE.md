@@ -44,6 +44,6 @@ bank robbery funny, police chase cartoon, mummy ki chappal, indian animation, gt
 - Thumbnail: `output/thumbnail.jpg` (1280x720).
 - Subtitles: upload `output/bunty_chintu_ep1.srt` under Subtitles → English (or Hindi, Latin script).
 - End screen: the last 17 seconds have dashed boxes on the left for "Next video" and "Subscribe" elements.
-- Voice credit (optional but nice): "Hindi voices generated with Kokoro-82M (Apache-2.0)".
+- Voice credit (optional): "Hindi voices: Sarvam AI". Check Sarvam's current commercial-use terms in your account before monetizing.
 - Made for kids: **No** (slapstick comedy for a general audience; your call).
 - Over 8 minutes, so you can turn on mid-roll ads if your channel is monetized.

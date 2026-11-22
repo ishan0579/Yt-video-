@@ -2,8 +2,8 @@
 
 An original 10-minute animated comedy with Hindi voice-over, in the style of an open-world crime game: wanted stars,
 minimap, mission banners, police chases, a bank "heist" and a heat-seeking chappal. Everything (characters, city, cars, HUD,
-music and sound effects) is generated from code, and the Hindi voice-over comes from the open-source Kokoro-82M TTS
-model (Apache-2.0, commercial use allowed). The video uses no game assets, no footage and no samples.
+music and sound effects) is generated from code. The Hindi voice-over uses natural Indian voices from Sarvam AI
+(Bulbul v4-flash). The video uses no game assets, no footage and no samples.
 
 ## Output
 | File | What it is |
@@ -35,16 +35,20 @@ model (Apache-2.0, commercial use allowed). The video uses no game assets, no fo
 16. **Outro:** like, subscribe, and an end screen with space for YouTube elements.
 
 ## Voice-over
-`audio/voices.py` reads each line's Devanagari text (`hi:` in the scene files) and synthesizes it with
-[Kokoro-82M](https://github.com/thewh1teagle/kokoro-onnx) (4 Hindi voices). Each character gets a distinct voice through
-base voice + speed + formant-aware pitch shift (ffmpeg rubberband), plus megaphone and muffle effects where the scene needs them.
-The mouths are animated from the real audio envelope. Model files go in `assets/tts/` (downloaded by `./build.sh` if missing).
+- `audio/voices.py` reads each line's Devanagari text (`hi:` in the scene files) and voices it with **Sarvam AI Bulbul v4-flash**
+  (one natural Indian voice per character, listed in `SCRIPT.md`). Lines are fitted into their timing slot: long dead-air
+  pauses are trimmed first, then a fresh take is tried, and only then a gentle speed-up (max 1.2x).
+- `audio/verify_voices.py` transcribes every line with Sarvam speech-to-text (saaras:v3) and re-takes any line whose
+  transcript doesn't match the script, so garbled takes are replaced automatically. Verified takes are kept on rebuild.
+- The Sarvam API key is not stored in the repo. In this cloud environment the network proxy injects it; elsewhere set
+  `SARVAM_API_KEY`. Offline fallback: `TTS=kokoro ./build.sh` uses the open-source Kokoro-82M model (more robotic).
+- Mouths are animated from the real audio envelope.
 
 ## Rebuild / edit
 Requirements: Node 18+, Python 3.10+, ffmpeg.
 ```bash
 npm install
-pip install numpy scipy fonttools brotli kokoro-onnx soundfile
+pip install numpy scipy fonttools brotli soundfile kokoro-onnx   # kokoro only needed for the offline fallback
 ./build.sh               # timeline -> Hindi voices -> audio -> parallel render -> mux  (≈12 min on 4 cores)
 ```
 - Change dialogue: edit the `lines` array in `src/scenes/s_*.mjs` (`t` = start second inside the scene).
