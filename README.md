@@ -47,6 +47,8 @@ music and sound effects) is generated from code. The Hindi voice-over uses natur
 ## Shorts
 `./build_shorts.sh` cuts 3 vertical Shorts (1080x1920) from the episode: hook title on top, a camera crop that follows
 the speaker, big captions, and an end card pointing to the full episode. Edit the clips in `src/shorts.mjs` (`SHORTS`).
+`./build_vertical.sh` renders the whole episode in the same vertical layout (`output/bunty_chintu_ep1_vertical.mp4`),
+with the chapter name in the top banner. Use it for vertical live streams.
 
 ## Rebuild / edit
 Requirements: Node 18+, Python 3.10+, ffmpeg.

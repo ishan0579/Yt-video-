@@ -17,6 +17,13 @@ export const SHORTS = [
     title: 'AGAR GTA 6 DESI HOTA?', sub: 'Cycle = SUPERCAR', accent: '#1dd3b0' },
 ];
 
+export const CHAPTERS = {
+  coldopen: 'Episode 1', title: 'Episode 1', loading: 'Loading...', beach: 'Spawn ho gaye!', cartheft: 'Ch 1: Gaadi Chori',
+  bikechase: 'Ch 2: Supercar', pool: 'Pool Party DJ', fasttravel: 'Fast Travel', plan: 'Ch 3: Master Plan',
+  costume: 'Disguise Shopping', bank: 'Ch 4: The Heist', news: 'Breaking News', autochase: 'Ch 5: Auto Wala Stunt',
+  mummy: 'Mission Failed', hospital: 'Respawn', dadipost: 'Dadi ka Comeback', outro: 'Like & Subscribe!',
+};
+const FIXED_CX = { loading: 1300, title: 960, coldopen: 960 };
 const VW = 1080, VH = 1920;
 const CROP_W = 1200, FRAME_Y = 450, FRAME_H = Math.round(1080 * VW / CROP_W); // 972
 
@@ -38,6 +45,7 @@ function drawVertical(vctx, src, scene, t, S, st) {
   let target = st.cx;
   if (al && S.anchors[al.who]) target = S.anchors[al.who][0];
   else if (xs.length) target = xs.reduce((a, b) => a + b, 0) / xs.length;
+  if (st.fixed != null && !(al && S.anchors[al.who] && scene.id !== 'title')) target = st.fixed;
   target = clamp(target, CROP_W / 2, W - CROP_W / 2);
   st.cx = st.snap ? target : st.cx + (target - st.cx) * 0.06;
   st.snap = false;
@@ -60,19 +68,21 @@ function drawVertical(vctx, src, scene, t, S, st) {
   if (al) {
     const C = CHARS[al.who] || { name: (al.name || al.who).toUpperCase(), tag: al.tag || '#457b9d' };
     const age = t - al.t, p = ease.back(clamp(age / 0.2));
-    vctx.font = '62px BalooX';
-    const lines = wrap(vctx, al.text, 860);
+    let csize = 62;
+    vctx.font = `${csize}px BalooX`;
+    let lines = wrap(vctx, al.text, 860);
+    if (lines.length > 2) { csize = 50; vctx.font = `${csize}px BalooX`; lines = wrap(vctx, al.text, 900); }
     const y0 = FRAME_Y + FRAME_H + 62;
     vctx.save(); vctx.translate(VW / 2, y0); vctx.scale(p, p);
     vctx.font = '40px Bangers';
     const nw = vctx.measureText(C.name).width + 40;
     rr(vctx, -nw / 2, -40, nw, 56, 12); fill(vctx, C.tag, 5);
     txt(vctx, C.name, 0, -12, { size: 40, font: 'Bangers', fill: '#fff', lw: 6 });
-    lines.slice(0, 2).forEach((s, i) => txt(vctx, s, 0, 60 + i * 72, { size: 62, font: 'BalooX', fill: al.style === 'shout' ? '#ffd23f' : '#fff', lw: 14 }));
+    lines.slice(0, 3).forEach((s, i) => txt(vctx, s, 0, 56 + i * (csize + 10), { size: csize, font: 'BalooX', fill: al.style === 'shout' ? '#ffd23f' : '#fff', lw: 14 }));
     vctx.restore();
   }
   // end card
-  if (st.left < 2.6) {
+  if (!st.noEndCard && st.left < 2.6) {
     const q = ease.back(clamp((2.6 - st.left) / 0.4));
     vctx.save(); vctx.translate(VW / 2, FRAME_Y + FRAME_H / 2); vctx.scale(q, q); vctx.rotate(-0.04);
     rr(vctx, -470, -130, 940, 260, 34); fill(vctx, '#e63946', 12, '#fff');
@@ -128,6 +138,34 @@ async function renderShort(sh, stillT = null) {
   console.log(`${sh.id}: ${total.toFixed(1)}s rendered`);
 }
 
+async function renderVerticalScene(idx) {
+  const scene = SCENES[idx];
+  const src = createCanvas(W, H), sctx = src.getContext('2d');
+  const out = createCanvas(VW, VH), vctx = out.getContext('2d');
+  const st = { cx: W / 2, snap: true, title: 'AGAR GTA 6 DESI HOTA?', sub: CHAPTERS[scene.id] || '', accent: '#ffd23f', lt: 99, left: 99, noEndCard: true, fixed: FIXED_CX[scene.id] ?? null };
+  const file = `build/vseg_${String(idx).padStart(2, '0')}.mp4`;
+  const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgba', '-s', `${VW}x${VH}`, '-r', String(FPS), '-i', '-',
+    '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-tune', 'animation', '-pix_fmt', 'yuv420p', '-g', '60', file], { stdio: ['pipe', 'inherit', 'inherit'] });
+  const n = Math.round(scene.dur * FPS);
+  for (let f = 0; f < n; f++) {
+    const t = f / FPS;
+    st.lt = idx === 0 ? t : 99; // title pops in only at the very start
+    const S = renderSource(sctx, scene, t);
+    const fi = scene.fadeIn ?? 0.3, fo = scene.fadeOut ?? 0.3;
+    if (fi > 0 && t < fi) { sctx.fillStyle = `rgba(0,0,0,${1 - t / fi})`; sctx.fillRect(0, 0, W, H); }
+    if (fo > 0 && t > scene.dur - fo) { sctx.fillStyle = `rgba(0,0,0,${(t - (scene.dur - fo)) / fo})`; sctx.fillRect(0, 0, W, H); }
+    drawVertical(vctx, src, scene, t, S, st);
+    if (!ff.stdin.write(out.data())) await new Promise(r => ff.stdin.once('drain', r));
+  }
+  ff.stdin.end();
+  await new Promise(r => ff.on('close', r));
+  console.log(`vertical scene ${idx} ${scene.id} done`);
+}
+
+if (process.argv[1] && process.argv[1].endsWith('shorts.mjs') && process.argv[2] === '--vscene') {
+  await renderVerticalScene(Number(process.argv[3]));
+  process.exit(0);
+}
 if (process.argv[1] && process.argv[1].endsWith('shorts.mjs')) {
   const id = process.argv[2];
   const si = process.argv.indexOf('--still');
